@@ -343,7 +343,7 @@ body {
       min-width: 12.5rem;
       margin: 0;
       padding: 0;
-      background-color: #EFEFEF;
+      background-color: #30312D;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
       opacity: 0;
       border-bottom: 5px solid var(--primary);
@@ -357,6 +357,10 @@ body {
       transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
       transform-origin: top;
     }
+
+    #cs-navigation .cs-long {
+      columns: 2;
+    }
     #cs-navigation .cs-drop-li {
       font-size: 1rem;
       text-decoration: none;
@@ -368,33 +372,6 @@ body {
       display: block;
       transform: translateY(-0.625rem);
       transition: opacity 0.6s, transform 0.6s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(1) {
-      transition-delay: 0.05s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(2) {
-      transition-delay: 0.1s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(3) {
-      transition-delay: 0.15s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(4) {
-      transition-delay: 0.2s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(5) {
-      transition-delay: 0.25s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(6) {
-      transition-delay: 0.3s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(7) {
-      transition-delay: 0.35s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(8) {
-      transition-delay: 0.4s;
-    }
-    #cs-navigation .cs-drop-li:nth-of-type(9) {
-      transition-delay: 0.45s;
     }
     #cs-navigation .cs-li-link.cs-drop-link {
       font-size: 1rem;
@@ -430,6 +407,7 @@ body {
         font-weight: 400;
         font-size: 1.2em;
         padding-left: 10rem;
+        white-space: nowrap;
     }
 
     #cs-navigation {
@@ -582,6 +560,17 @@ body {
       top: 0;
       left: 0;
       z-index: -2;
+    }
+
+    #hero-1426 .cs-video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      object-fit: cover;
     }
     #hero-1426 .cs-background:before {
       /* Overlay */
@@ -3566,4 +3555,178 @@ background-color: #ED7027;
   }
 }
 
-                              
+/*-- -------------------------- -->
+<---           Blog             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #blog-1702 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0rem;
+  }
+  #blog-1702 .cs-container {
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #blog-1702 .cs-news {
+    /* changes to 740px on tablet */
+    max-width: 31.25rem;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #blog-1702 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
+  }
+  #blog-1702 .cs-title {
+    margin: 0;
+  }
+  #blog-1702 .cs-card-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #blog-1702 .cs-item {
+    display: flex;
+    flex-direction: column;
+    /* 20px - 32px */
+    gap: clamp(1.25rem, 3vw, 2rem);
+    background-color:#30312D;
+    border-radius: 0.50rem;
+    padding: 2rem;
+  }
+  #blog-1702 .cs-picture {
+    width: auto;
+    height: 11.4375rem;
+    display: block;
+  }
+  #blog-1702 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #blog-1702 .cs-item-text {
+    flex: 1 0 0;
+  }
+  #blog-1702 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+   
+  }
+  #blog-1702 .cs-desc {
+    font-size: 1rem;
+    line-height: 1.5em;
+
+    margin: 0;
+    color: var(--bodyTextColor);
+
+  }
+  #blog-1702 .cs-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    transition: color 0.3s;
+  }
+  #blog-1702 .cs-link:hover .cs-arrow {
+    transform: translateX(0.25rem);
+  }
+  #blog-1702 .cs-link-text {
+    width: fit-content;
+    display: block;
+    color: #ED7027;
+  }
+  #blog-1702 .cs-arrow {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+    transition: filter 0.3s, transform 0.3s;
+  }
+  #blog-1702 .cs-background {
+    width: 100%;
+    height: 22.5rem;
+    display: block;
+  }
+  #blog-1702 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #blog-1702 {
+    padding: 0rem 2rem;
+    margin-top: 10rem;
+  }
+  #blog-1702 .cs-container {
+    padding: 0;
+    justify-content: flex-start;
+  }
+  #blog-1702 .cs-title {
+    margin: 0;
+  }
+  #blog-1702 .cs-news {
+    width: 60vw;
+    max-width: 46.25rem;
+    margin: 0;
+    padding: 0;
+  }
+  #blog-1702 .cs-card-group {
+    /* 16px - 32px */
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  #blog-1702 .cs-item {
+    flex-direction: row;
+  }
+  #blog-1702 .cs-picture {
+    width: 11.25rem;
+    height: 11.25rem;
+  }
+  #blog-1702 .cs-background {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #blog-1702 .cs-background {
+    width: 50vw;
+    left: 50%;
+    right: auto;
+    margin-left: 13.75rem;
+  }
+}
+                                                              

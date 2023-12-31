@@ -6,7 +6,7 @@
     <title>Elite Earthworks and Engineering</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montsserrat">
-
+    <script src="/index.js"></script>
 </head>
 <body>
 
@@ -33,51 +33,83 @@
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="/about.html" class="cs-li-link">
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
                             About Us
-                        </a>
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">About Us</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Story</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Team</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Why Elite</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Safety</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Technology</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            Careers
-                        </a>
-                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Expertise
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul cs-long">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Commercial</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Residential</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Transportation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Residential</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Industrial</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Utilities</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Paving</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Site Design</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Concrete</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Mass Excavation</a>
+                            </li>
+                        </ul>
+                    </li>                    
                     <li class="cs-li">
                         <a href="/projects.html" class="cs-li-link">
                             Projects
                         </a>
                     </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
-                            Careers
-                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-                        <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Tirezapetide</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Tirezapetide</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Semaglutide</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Tirezapetide</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            Blog
+                            Careers
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/news.html" class="cs-li-link">
+                            News
                         </a>
                     </li>
                 </ul>
@@ -111,12 +143,8 @@
         </div>
     </div>
 
-    <!-- Background Image -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" src="/images/hero.jpg">
-        <source media="(min-width: 601px)" src="/images/hero.jpg">
-        <img loading="lazy" decoding="async" src="/images/hero.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
-    </picture>
+    <!-- Background Video -->
+    <video class="cs-video" src="/videos/video.mp4" autoplay muted loop></video>
 </section>
                                 
 <!-- ============================================ -->
@@ -275,7 +303,7 @@
                 <h2 class="cs-title">Sharing Our Expertise</h2>
                 <div class="orange-line"></div>
             </div>
-            <a href="" class="cs-button-solid">View All</a>
+            <a href="/news.html" class="cs-button-solid">View All</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -367,7 +395,7 @@
                     <a href="" class="cs-link">Events</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">Blog</a>
+                    <a href="/news.html" class="cs-link">News</a>
                 </li>
                 <li class="cs-li">
                     <a href="/contact.html" class="cs-link">Contact</a>
