@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 // add classes for mobile navigation toggling
 var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
@@ -15,6 +16,7 @@ CShamburgerMenu.addEventListener('click', function() {
 function ariaExpanded() {
     const csUL = document.querySelector('#cs-expanded');
     const csExpanded = csUL.getAttribute('aria-expanded');
+
     if (csExpanded === 'false') {
         csUL.setAttribute('aria-expanded', 'true');
     } else {
@@ -22,7 +24,7 @@ function ariaExpanded() {
     }
 }
 
-// mobile nav toggle code
+// mobile nav dropdown code if needed
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
     for (const item of dropDowns) {
         const onClick = () => {
@@ -30,4 +32,4 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
     item.addEventListener('click', onClick)
     }
-                            
+});

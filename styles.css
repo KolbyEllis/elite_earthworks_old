@@ -152,7 +152,7 @@ body {
       width: 100%;
       height: auto;
       padding-bottom: 2.4em;
-      background-color: #EFEFEF;
+      background-color: none;
       box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
       opacity: 0;
       position: absolute;
@@ -261,6 +261,7 @@ body {
   
   /* Mobile - 1023px */  
   @media only screen and (max-width: 63.9375rem) {
+    
     #cs-navigation .cs-li {
       text-align: center;
       width: 100%;
@@ -3940,4 +3941,3 @@ background-color: #ED7027;
   }
 }
                                 
-                                                              
