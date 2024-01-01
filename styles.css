@@ -561,7 +561,6 @@ body {
       left: 0;
       z-index: -2;
     }
-
     #hero-1426 .cs-video {
       width: 100%;
       height: 100%;
@@ -572,6 +571,15 @@ body {
       z-index: -2;
       object-fit: cover;
       opacity: 0.5;
+    }
+    .bg-shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6em;
+      z-index: 3;
+      background: linear-gradient(to bottom, transparent, #272724);
     }
     #hero-1426 .cs-background:before {
       /* Overlay */
