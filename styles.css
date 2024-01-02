@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0rem;
     font-family: Montserrat, sans-serif;
     background-color: #272724;
     font-weight: bolder;
@@ -241,7 +241,7 @@ body {
       content: "";
       width: 100%;
       height: 1px;
-      background: #ED7027;
+      background: #B91D1F;
       opacity: 1;
       display: none;
       position: absolute;
@@ -390,7 +390,7 @@ body {
     }
     #cs-navigation .cs-li-link.cs-drop-link:hover {
       
-      background-color: #ED7027;
+      background-color: #B91D1F;
     }
     #cs-navigation .cs-li-link.cs-drop-link:before {
       display: none;
@@ -418,7 +418,7 @@ body {
       padding: 0 1rem;
       background-color: #30312D;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      position: fixed;
+      position: relative;
       z-index: 10000;
     }
     #cs-navigation .cs-container {
@@ -490,7 +490,7 @@ body {
       content: "";
       width: 0%;
       height: 2px;
-      background: #ED7027;
+      background: #B91D1F;
       opacity: 1;
       display: block;
       position: absolute;
@@ -512,8 +512,8 @@ body {
       box-sizing: border-box;
       padding: 0 1.5rem;
       color: #EFEFEF;
-      background-color: #ED7027;
-      border: 2px solid #ED7027;
+      background-color: #B91D1F;
+      border: 2px solid #B91D1F;
       border-radius: 0.50rem;
       display: inline-block;
       position: relative;
@@ -663,8 +663,8 @@ body {
       box-sizing: border-box;
       padding: 0 1.5rem;
       color: #EFEFEF;
-      background-color: #ED7027;
-      border: 2px solid #ED7027;
+      background-color: #B91D1F;
+      border: 2px solid #B91D1F;
       border-radius: 0.50rem;
       display: inline-block;
       position: relative;
@@ -676,7 +676,7 @@ body {
       position: absolute;
       height: 100%;
       width: 0%;
-      background: #ED7027;
+      background: #B91D1F;
       opacity: 1;
       top: 0;
       left: 0;
@@ -689,7 +689,7 @@ body {
       background-color: #272724;
     }
     #hero-1426 .cs-button1 {
-      background-color: #ED7027;
+      background-color: #B91D1F;
     }
   }
 
@@ -751,8 +751,8 @@ body {
       /* prevents padding from adding to the width */
       box-sizing: border-box;
       color: #EFEFEF;
-      background-color: #ED7027;
-      border: 2px solid #ED7027;
+      background-color: #B91D1F;
+      border: 2px solid #B91D1F;
       border-radius: 0.50rem;
       display: inline-block;
       position: relative;
@@ -794,7 +794,7 @@ body {
       width: 50vw;
       max-width: 30%;
       height: 0.3rem;
-      background-color: #ED7027;
+      background-color: #B91D1F;
     }
     .exp-button-container {
       display: flex;
@@ -844,7 +844,7 @@ body {
   width: 8vw;
   max-width: 8vw;
   height: 0.3rem;
-  background-color: #ED7027;
+  background-color: #B91D1F;
 }
 .exp-button-container {
 display: flex;
@@ -911,7 +911,7 @@ justify-content: center;
 
   #quote-561 .cs-name,
   #quote-561 .cs-company {
-    color: #ED7027;
+    color: #B91D1F;
   }
 }
 
@@ -966,8 +966,8 @@ justify-content: center;
     padding: 0 1.5rem;
     margin-top: 2rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -1063,7 +1063,7 @@ justify-content: center;
       text-align: inherit;
       line-height: 1.2em;
       font-weight: 700;
-      color: #ED7027;
+      color: #B91D1F;
       margin: 0 0 0.75rem 0;
       transition: color 0.3s;
   }
@@ -1128,7 +1128,7 @@ justify-content: center;
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-999 .cs-title {
-    color: #ED7027;
+    color: #B91D1F;
     }
   #sbs-999 {
     position: relative;
@@ -1193,8 +1193,8 @@ justify-content: center;
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -1235,7 +1235,7 @@ justify-content: center;
     width: 50vw;
     max-width: 30%;
     height: 0.3rem;
-    background-color: #ED7027;
+    background-color: #B91D1F;
   }
 
 /* Styles for screens with a minimum width of 48rem (768px) */
@@ -1276,7 +1276,7 @@ justify-content: center;
 width: 8vw;
 max-width: 8vw;
 height: 0.3rem;
-background-color: #ED7027;
+background-color: #B91D1F;
 }
 }
 
@@ -1286,7 +1286,6 @@ background-color: #ED7027;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-
   #sbsr-999 {
     position: relative;
     margin-top: 2rem;
@@ -1299,7 +1298,7 @@ background-color: #ED7027;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #272724; /* Adjust the color and opacity as needed */
+    background: url(/images/bg-texture.svg);
   }
 }
   #sbsr-999 .cs-container {
@@ -1325,6 +1324,9 @@ background-color: #ED7027;
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
   }
+  #sbsr-999 .cs-title {
+   line-height: 1.2; 
+  }
   #sbsr-999 .cs-text {
       margin-bottom: 1rem;
       font-weight: 400;
@@ -1347,8 +1349,8 @@ background-color: #ED7027;
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -1376,6 +1378,7 @@ background-color: #ED7027;
       width: 100%;
       height: 16rem;
       z-index: 1;
+      margin-top: 2rem;
   }
   #sbsr-999 .cs-background img {
     position: absolute;
@@ -1388,7 +1391,7 @@ background-color: #ED7027;
     width: 50vw;
     max-width: 30%;
     height: 0.3rem;
-    background-color: #ED7027;
+    background-color: #B91D1F;
   }
 
 /* Styles for screens with a minimum width of 48rem (768px) */
@@ -1411,6 +1414,7 @@ background-color: #ED7027;
     top: 0;
     bottom: 0;
     left: 50%;
+    margin: 0;
 }
 #sbsr-999 .cs-content {
   transform: scaleX(-1);
@@ -1425,13 +1429,13 @@ background-color: #ED7027;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 0.75rem;
+
 }
 .orange-line {
 width: 8vw;
 max-width: 8vw;
 height: 0.3rem;
-background-color: #ED7027;
+background-color: #B91D1F;
 }
 }
 
@@ -1444,8 +1448,7 @@ background-color: #ED7027;
   #blog-1580 {
     position: relative;
     z-index: 1;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding: 0rem 2rem;
   }
   #blog-1580 .cs-container {
     width: 100%;
@@ -1485,8 +1488,8 @@ background-color: #ED7027;
     padding: 0 1.5rem;
     margin-top: 2rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -1599,7 +1602,7 @@ background-color: #ED7027;
     text-align: inherit;
     line-height: 1.2em;
     font-weight: 700;
-    color: #ED7027;
+    color: #B91D1F;
     /* 12px - 16px */
     margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
     transition: color .3s;
@@ -1648,7 +1651,8 @@ background-color: #ED7027;
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #footer-1147 {
-      padding: var(--sectionPadding);
+      padding: 2rem;
+      margin-top: 2rem;
       position: relative;
       z-index: 1;
   }
@@ -1697,7 +1701,7 @@ background-color: #ED7027;
       transition: color 0.3s;
   }
   #footer-1147 .cs-link:hover {
-      color: #ED7027;
+      color: #B91D1F;
   }
   #footer-1147 .cs-logo {
       width: 10.5rem;
@@ -1739,7 +1743,7 @@ background-color: #ED7027;
       transition: background-color 0.3s;
   }
   #footer-1147 .cs-social-link:hover {
-      background-color: #ED7027;
+      background-color: #B91D1F;
   }
   #footer-1147 .cs-social-link:hover .cs-social-icon {
       filter: grayscale(1) brightness(0);
@@ -1823,7 +1827,7 @@ background-color: #ED7027;
       padding: 2rem;
       position: relative;
       background: url(images/bg-texture.svg);
-      background-size: contain;
+      background-size: fill;
       background-position: center;
       background-repeat: no-repeat;
       z-index: 1;
@@ -1902,7 +1906,7 @@ background-color: #ED7027;
       font-weight: 700;
       line-height: 1.2em;
       margin-bottom: 0.75rem;
-      color: #ED7027;
+      color: #B91D1F;
       display: block;
   }
   #contact-1151 .cs-link {
@@ -1959,6 +1963,7 @@ background-color: #ED7027;
       border: none;
       /* prevents padding from adding to height and width */
       box-sizing: border-box;
+
   }
   #contact-1151 .cs-input::placeholder {
       color: #7d799c;
@@ -1983,8 +1988,8 @@ background-color: #ED7027;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -2040,8 +2045,427 @@ background-color: #ED7027;
   }
 }
 
-                              
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
 
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-1268 {
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+  }
+  #contact-1268 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+  }
+  #contact-1268 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      padding: 2rem;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+  }
+  #contact-1268 .cs-ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+    text-align: start;
+}
+#contact-1268 .cs-li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+#contact-1268 .cs-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 0.75rem;
+    color: #B91D1F;
+    display: block;
+}
+#contact-1268 .cs-link {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #EFEFEF;
+    display: block;
+    position: relative;
+}
+
+#contact-1268 .cs-icon-wrapper {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    transition: transform 0.3s;
+}
+#contact-1268 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+}
+  #contact-1268 .cs-form-group {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      max-width: 44rem;
+      /* resets to 0 at tablet */
+      margin: auto;
+      padding: 2rem;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+      order: 2;
+
+  }
+
+  #contact-1268 .cs-title {
+      color: var(--bodyTextColorWhite);
+      line-height: 1.2;
+  }
+  #contact-1268 .cs-text {
+      margin: 0;
+      color: #EFEFEF;
+      padding-bottom: 2rem;
+  }
+  #contact-1268 .cs-h3 {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      text-align: left;
+      max-width: 32.625rem;
+      margin: 0 auto 2rem 0;
+      color: var(--headerColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+  }
+  #contact-1268 .cs-picture {
+      width: 3.25rem;
+      height: 3.25rem;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: none;
+      position: relative;
+      z-index: 1;
+  }
+  #contact-1268 .cs-picture:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: var(--primary);
+      opacity: 0.2;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+  }
+  #contact-1268 .cs-form {
+      width: 100%;
+      padding: 0;
+      /* prevents flexbox from affecting height and width */
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 0.75rem;
+  }
+  #contact-1268 .cs-label {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      color: var(--headerColor);
+      display: flex;
+      grid-column: span 12;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.5rem;
+  }
+  #contact-1268 .cs-input {
+      font-size: 1rem;
+      width: 100%;
+      /* 46px - 56px */
+      height: clamp(2.875rem, 4.5vw, 3.5rem);
+      padding: 0;
+      padding-left: 1.5rem;
+      color: var(--headerColor);
+      border-radius: 0.5rem;
+      border: 1px solid #dad9e3;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+  }
+  #contact-1268 .cs-input::placeholder {
+      color: #7d799c;
+      opacity: 0.6;
+  }
+  #contact-1268 .cs-textarea {
+      min-height: 7.5rem;
+      padding-top: 1.5rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+  }
+  #contact-1268 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #EFEFEF;
+      border: none;
+      min-width: 9.375rem;
+      padding: 0 1.5rem;
+      background-color: #B91D1F;
+      border: 2px solid #B91D1F;
+      border-radius: 0.50rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      transition: color 0.3s;
+  }
+  #contact-1268 .cs-button-solid:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #272724;
+      border-radius: 0.50rem;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s all;
+  }
+  #contact-1268 .cs-button-solid:hover {
+      color: #fff;
+  }
+  #contact-1268 .cs-button-solid:hover:before {
+      width: 100%;
+  }
+  #contact-1268 .cs-submit {
+      width: 100%;
+      margin: 0;
+      color: var(--bodyTextColorWhite);
+      border-radius: 0.5rem;
+      grid-column: span 12;
+  }
+  #contact-1268 .cs-submit:hover {
+      cursor: pointer;
+  }
+  #contact-1268 .cs-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  }
+  #contact-1268 .cs-card-group {
+      width: 100%;
+      max-width: 32.625rem;
+      margin: 0;
+      padding: var(--sectionPadding);
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.3vw, 1.25rem);
+      order: 1;
+      position: relative;
+      z-index: 1;
+  }
+  #contact-1268 .cs-item {
+      text-align: left;
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      /* 16px - 20px */
+      padding: clamp(1rem, 4vw, 2.5rem);
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+  }
+  #contact-1268 .cs-item:hover:before {
+      opacity: 1;
+  }
+  #contact-1268 .cs-item:hover .cs-header,
+  #contact-1268 .cs-item:hover .cs-item-text,
+  #contact-1268 .cs-item:hover .cs-link {
+      color: var(--bodyTextColorWhite);
+  }
+  #contact-1268 .cs-item:hover .cs-text,
+  #contact-1268 .cs-item:hover .cs-link {
+      opacity: 0.8;
+  }
+  #contact-1268 .cs-item:hover .cs-link:hover {
+      color: var(--primary);
+  }
+  #contact-1268 .cs-item:hover .cs-icon {
+      filter: grayscale(1) brightness(1000%);
+  }
+  #contact-1268 .cs-item:before {
+      /* hover border and background */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #1a1a1a;
+      border: 1px solid var(--primary);
+      opacity: 0;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: opacity 0.3s;
+  }
+  #contact-1268 .cs-header {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      text-align: inherit;
+      font-weight: 700;
+      /* 12px - 16px */
+      margin: 0 0 clamp(0.75rem, 1.6vw, 1rem);
+      display: block;
+      transition: color 0.3s;
+  }
+  #contact-1268 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-align: inherit;
+      margin: 0 0 0.25rem;
+      color: var(--bodyTextColor);
+      display: block;
+      transition: color 0.3s;
+  }
+  #contact-1268 .cs-link {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-align: inherit;
+      margin: 0;
+      color: var(--bodyTextColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.25rem;
+      transition: color 0.3s;
+  }
+  #contact-1268 .cs-icon {
+      width: 1rem;
+      height: auto;
+  }
+  #contact-1268 .cs-background {
+      width: 100%;
+      height: 100%;
+      background-color: #1a1a1a;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+  #contact-1268 .cs-background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #contact-1268 .cs-label:nth-of-type(1),
+  #contact-1268 .cs-label:nth-of-type(2) {
+      grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-1268 {
+      /* moved padding back to the section container */
+      padding: var(--sectionPadding);
+  }
+  #contact-1268 .cs-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  #contact-1268 .cs-content {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      align-items: flex-start;
+  }
+  #contact-1268 .cs-form-group {
+      width: 43%;
+      max-width: 32.625rem;
+      margin: 0;
+      padding: 2rem;
+  }
+  #contact-1268 .cs-form {
+      padding: 0;
+  }
+  #contact-1268 .cs-wrapper {
+      width: 50%;
+      max-width: 32.75rem;
+      flex: none;
+      /* removes position from it so the absolutely positioned background group can now be positioned relative to the section container */
+      position: initial;
+  }
+  #contact-1268 .cs-background {
+      width: 60vw;
+      height: 100%;
+      left: auto;
+      right: 50%;
+      top: 0;
+  }
+  #contact-1268 .cs-card-group {
+      padding: 0;
+  }
+}
+
+                              
+                                                          
 /*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
@@ -2198,8 +2622,8 @@ background-color: #ED7027;
       /* prevents padding from adding to the width */
       box-sizing: border-box;
       color: #EFEFEF;
-      background-color: #ED7027;
-      border: 2px solid #ED7027;
+      background-color: #B91D1F;
+      border: 2px solid #B91D1F;
       border-radius: 0.50rem;
       display: inline-block;
       position: relative;
@@ -2241,7 +2665,7 @@ background-color: #ED7027;
       width: 50vw;
       max-width: 30%;
       height: 0.3rem;
-      background-color: #ED7027;
+      background-color: #B91D1F;
     }
     .exp-button-container {
       display: flex;
@@ -2291,7 +2715,7 @@ background-color: #ED7027;
   width: 8vw;
   max-width: 8vw;
   height: 0.3rem;
-  background-color: #ED7027;
+  background-color: #B91D1F;
 }
 .exp-button-container {
 display: flex;
@@ -2355,8 +2779,8 @@ justify-content: center;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -2398,7 +2822,7 @@ justify-content: center;
     width: 50vw;
     max-width: 30%;
     height: 0.3rem;
-    background-color: #ED7027;
+    background-color: #B91D1F;
   }
 
 /* Styles for screens with a minimum width of 48rem (768px) */
@@ -2440,7 +2864,7 @@ justify-content: center;
 width: 8vw;
 max-width: 8vw;
 height: 0.3rem;
-background-color: #ED7027;
+background-color: #B91D1F;
 }
 }
 }
@@ -2499,8 +2923,8 @@ background-color: #ED7027;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -2541,7 +2965,7 @@ background-color: #ED7027;
     width: 50vw;
     max-width: 30%;
     height: 0.3rem;
-    background-color: #ED7027;
+    background-color: #B91D1F;
   }
 
 /* Styles for screens with a minimum width of 48rem (768px) */
@@ -2583,7 +3007,7 @@ background-color: #ED7027;
 width: 8vw;
 max-width: 8vw;
 height: 0.3rem;
-background-color: #ED7027;
+background-color: #B91D1F;
 }
 }
 }
@@ -2970,8 +3394,8 @@ background-color: #ED7027;
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -3012,7 +3436,7 @@ background-color: #ED7027;
     width: 50vw;
     max-width: 30%;
     height: 0.3rem;
-    background-color: #ED7027;
+    background-color: #B91D1F;
   }
 
 /* Styles for screens with a minimum width of 48rem (768px) */
@@ -3053,7 +3477,7 @@ background-color: #ED7027;
 width: 8vw;
 max-width: 8vw;
 height: 0.3rem;
-background-color: #ED7027;
+background-color: #B91D1F;
 }
 }
 
@@ -3270,8 +3694,8 @@ background-color: #ED7027;
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #EFEFEF;
-    background-color: #ED7027;
-    border: 2px solid #ED7027;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
     border-radius: 0.50rem;
     display: inline-block;
     position: relative;
@@ -3487,7 +3911,7 @@ background-color: #ED7027;
       content: "";
       width: 100%;
       height: 100%;
-      background: #ED7027;
+      background: #B91D1F;
       opacity: 1;
       position: absolute;
       display: block;
@@ -3637,11 +4061,9 @@ background-color: #ED7027;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
-
     margin: 0;
     margin-bottom: 1rem;
     color: var(--headerColor);
-   
   }
   #blog-1702 .cs-desc {
     font-size: 1rem;
@@ -3671,7 +4093,7 @@ background-color: #ED7027;
   #blog-1702 .cs-link-text {
     width: fit-content;
     display: block;
-    color: #ED7027;
+    color: #B91D1F;
   }
   #blog-1702 .cs-arrow {
     width: 1.25rem;

@@ -8,6 +8,122 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montsserrat">
 </head>
 <body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img src="/images/elite.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            About Us
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/about.html" class="cs-li-link cs-drop-link">About Us</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/ourstory.html" class="cs-li-link cs-drop-link">Our Story</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/ourteam.html" class="cs-li-link cs-drop-link">Our Team</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/whyelite.html" class="cs-li-link cs-drop-link">Why Elite</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Safety</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Technology</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Expertise
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul cs-long">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Commercial</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Residential</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Transportation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Residential</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Industrial</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Utilities</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Paving</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Site Design</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Concrete</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Mass Excavation</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="cs-li">
+                        <a href="/projects.html" class="cs-li-link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Careers
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/news.html" class="cs-li-link">
+                            News
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="phone">(623)-262-8585</div>
+        <a href="/contact.html" class="cs-button-solid cs-nav-button">Contact</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
@@ -224,6 +340,82 @@
             </li>
         </ul>
     </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<section id="footer-1147">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="/images/elite.jpg" alt="logo" width="168" height="48">
+            </a>
+
+            
+        </div>
+        <div class="cs-bottom">
+
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="/about.html" class="cs-link">About</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Expertise</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Projects</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Careers</a>
+                </li>
+                <li class="cs-li">
+                    <a href="/news.html" class="cs-link">News</a>
+                </li>
+                <li class="cs-li">
+                    <a href="/contact.html" class="cs-link">Contact</a>
+                </li>
+            </ul>
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2023 - <a href="" class="cs-copyright-link">Branson Web Designs</a>
+            </span>
+        </div>
+    </div>
+    <!--Background-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" src="/images/quote.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" src="/images/quote.jpg">
+        <img loading="lazy" decoding="async" src="/images/quote.jpg" alt="kids" width="1280" height="568">
+    </picture>
 </section>
 
 </body>
