@@ -59,6 +59,7 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
+
     #cs-navigation .cs-container {
       width: 100%;
       display: flex;
@@ -309,6 +310,8 @@ body {
       overflow: hidden;
       transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, visibility 0.3s;
     }
+
+    
     #cs-navigation .cs-drop-li {
       list-style: none;
     }
@@ -349,6 +352,7 @@ body {
       opacity: 0;
       border-bottom: 5px solid var(--primary);
       visibility: hidden;
+      columns: 2;
       /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
       position: absolute;
       top: 100%;
@@ -833,8 +837,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+
 }
 .orange-line {
   width: 8vw;
@@ -911,7 +914,157 @@ justify-content: center;
   }
 }
 
-  /*-- -------------------------- -->
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1354 {
+      padding: 0rem 2rem;
+      position: relative;
+      z-index: 10;
+      padding-bottom: 2rem;
+  }
+  #services-1354 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: clamp(3rem, 6vw, 4rem);
+      
+  }
+  #services-1354 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+  }
+  #services-1354 .cs-title {
+      line-height: 1.2;
+  }
+  #services-1354 .cs-card-group {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1354 .cs-item {
+      text-align: center;
+      list-style: none;
+      width: 100%;
+      height: 19.0625rem;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      border-radius: 1.5rem;
+      /* clips background image corners */
+      overflow: hidden;
+
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      grid-column: span 12;
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 1;
+  }
+  #services-1354 .cs-item:hover .cs-background:before {
+      background-color: var(--primary);
+      opacity: 0.84;
+  }
+  #services-1354 .cs-item:hover .cs-background img {
+      transform: scale(1.2);
+  }
+  #services-1354 .cs-link {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+      padding: 1.5rem;
+      /* prevents padding from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #services-1354 .cs-h3 {
+      line-height: 1.2em;
+      text-align: inherit;
+      margin: 0;
+      color: #EFEFEF;
+      transition: color 0.3s;
+  }
+  #services-1354 .cs-span {
+      /* forces the h3 to alwasy be two lines */
+      display: block;
+  }
+  #services-1354 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+  #services-1354 .cs-background:before {
+      /* background color overlay */
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition:
+          background-color 0.3s,
+          opacity 0.3s;
+  }
+  #services-1354 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* Makes img tag act as a background image */
+      object-fit: cover;
+      transition: transform 0.6s;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #services-1354 .cs-item {
+      grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-1354 .cs-content {
+    display: none;
+  }
+  #services-1354 .cs-item {
+      grid-column: span 3;
+      margin-top: -10rem;
+  }
+}
+
+                              
+
+/*-- -------------------------- -->
 <---          Projects          -->
 <--- -------------------------- -*/
 
@@ -1285,6 +1438,7 @@ background-color: #B91D1F;
   #sbsr-999 {
     position: relative;
     margin-top: 2rem;
+    height: 20rem;
   }
 
   #sbsr-999::before {
@@ -1294,7 +1448,7 @@ background-color: #B91D1F;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(/images/bg-texture.svg);
+    background: url(/images/white-waves.svg);
   }
 }
   #sbsr-999 .cs-container {
@@ -2230,7 +2384,107 @@ background-color: #B91D1F;
   #contact-1268 .cs-card-group {
       padding: 0;
   }
-}                                                  
+}
+
+                              
+                                                          
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1519 {
+    padding: var(--sectionPadding);
+    /* 190px - 268px */
+    padding-top: clamp(11.875rem, 25vw, 16.75rem);
+    /* 100px - 150px */
+    padding-bottom: clamp(6.25rem, 12vw, 9.375rem);
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #banner-1519 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+  #banner-1519 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: #EFEFEF;
+    position: relative;
+  }
+  #banner-1519 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--bodyTextColor);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1519 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1519 .cs-link:after {
+    /* chevron */
+    content: '';
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-chevron.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+  #banner-1519 .cs-link.cs-active {
+    color: var(--primary);
+  }
+  #banner-1519 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #banner-1519 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #banner-1519 .cs-background:before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 243, 236, 0.9) 23.05%, rgba(255, 243, 236, 0) 80.08%);
+    opacity: 1;
+  }
+}
 
 /*-- -------------------------- -->
 <---       Side By Side         -->
@@ -2296,7 +2550,6 @@ background-color: #B91D1F;
       display: inline-block;
       position: relative;
       z-index: 1;
-
     }
     #sbs-598 .cs-button-solid:before {
         content: "";
@@ -2376,8 +2629,7 @@ background-color: #B91D1F;
     left: 0;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+
 }
 .orange-line {
   width: 8vw;
