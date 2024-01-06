@@ -18,10 +18,10 @@ body {
     font-weight: 400;
     font-size: 1.2em;
   }
-    body.cs-open {
+    body.ke-open {
       overflow: hidden;
     }
-    #cs-navigation {
+    #ke-navigation {
       width: 100%;
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
@@ -31,7 +31,7 @@ body {
       position: fixed;
       z-index: 10000;
     }
-    #cs-navigation:before {
+    #ke-navigation:before {
       content: "";
       width: 100%;
       height: 0vh;
@@ -46,28 +46,28 @@ body {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
-    #cs-navigation.cs-active:before {
+    #ke-navigation.ke-active:before {
       height: 150vh;
       opacity: 1;
     }
-    #cs-navigation.cs-active .cs-ul-wrapper {
+    #ke-navigation.ke-active .ke-ul-wrapper {
       opacity: 1;
       transform: scaleY(1);
       transition-delay: 0.15s;
     }
-    #cs-navigation.cs-active .cs-li {
+    #ke-navigation.ke-active .ke-li {
       opacity: 1;
       transform: translateY(0);
     }
 
-    #cs-navigation .cs-container {
+    #ke-navigation .ke-container {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       background-color: #30312D;
     }
-    #cs-navigation .cs-logo {
+    #ke-navigation .ke-logo {
       width: 40%;
       max-width: 9.125rem;
       height: 100%;
@@ -80,13 +80,13 @@ body {
       align-items: center;
       z-index: 10;
     }
-    #cs-navigation .cs-logo img {
+    #ke-navigation .ke-logo img {
       width: 100%;
       height: 100%;
       /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
       object-fit: contain;
     }
-    #cs-navigation .cs-toggle {
+    #ke-navigation .ke-toggle {
       /* 44px - 48px */
       width: clamp(2.75rem, 6vw, 3rem);
       height: clamp(2.75rem, 6vw, 3rem);
@@ -98,27 +98,27 @@ body {
       justify-content: center;
       align-items: center;
     }
-    #cs-navigation .cs-active .cs-line1 {
+    #ke-navigation .ke-active .ke-line1 {
       top: 50%;
       transform: translate(-50%, -50%) rotate(225deg);
     }
-    #cs-navigation .cs-active .cs-line2 {
+    #ke-navigation .ke-active .ke-line2 {
       top: 50%;
       transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
       transform-origin: center;
     }
-    #cs-navigation .cs-active .cs-line3 {
+    #ke-navigation .ke-active .ke-line3 {
       opacity: 0;
       bottom: 100%;
     }
-    #cs-navigation .cs-box {
+    #ke-navigation .ke-box {
       /* 24px - 28px */
       width: clamp(1.5rem, 2vw, 1.75rem);
       /* 14px - 16px */
       height: clamp(0.875rem, 1.5vw, 1rem);
       position: relative;
     }
-    #cs-navigation .cs-line {
+    #ke-navigation .ke-line {
       width: 100%;
       height: 2px;
       background-color: #1a1a1a;
@@ -127,7 +127,7 @@ body {
       left: 50%;
       transform: translateX(-50%);
     }
-    #cs-navigation .cs-line1 {
+    #ke-navigation .ke-line1 {
       top: 0;
       transition: transform 0.5s, top 0.3s, left 0.3s;
       animation-duration: 0.7s;
@@ -136,7 +136,7 @@ body {
       animation-fill-mode: forwards;
       transform-origin: center;
     }
-    #cs-navigation .cs-line2 {
+    #ke-navigation .ke-line2 {
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
       transition: top 0.3s, left 0.3s, transform 0.5s;
@@ -145,11 +145,11 @@ body {
       animation-direction: normal;
       animation-fill-mode: forwards;
     }
-    #cs-navigation .cs-line3 {
+    #ke-navigation .ke-line3 {
       bottom: 0;
       transition: bottom 0.3s, opacity 0.3s;
     }
-    #cs-navigation .cs-ul-wrapper {
+    #ke-navigation .ke-ul-wrapper {
       width: 100%;
       height: auto;
       padding-bottom: 2.4em;
@@ -165,7 +165,7 @@ body {
       transition: transform 0.4s, opacity 0.3s;
       transform-origin: top;
     }
-    #cs-navigation .cs-ul {
+    #ke-navigation .ke-ul {
       width: 100%;
       height: auto;
       max-height: 65vh;
@@ -178,7 +178,7 @@ body {
       gap: 1.25rem;
       overflow: auto;
     }
-    #cs-navigation .cs-li {
+    #ke-navigation .ke-li {
       text-align: center;
       list-style: none;
       width: 100%;
@@ -188,46 +188,46 @@ body {
       transform: translateY(-4.375rem);
       transition: transform 0.6s, opacity 0.9s;
     }
-    #cs-navigation .cs-li:nth-of-type(1) {
+    #ke-navigation .ke-li:nth-of-type(1) {
       transition-delay: 0.05s;
     }
-    #cs-navigation .cs-li:nth-of-type(2) {
+    #ke-navigation .ke-li:nth-of-type(2) {
       transition-delay: 0.1s;
     }
-    #cs-navigation .cs-li:nth-of-type(3) {
+    #ke-navigation .ke-li:nth-of-type(3) {
       transition-delay: 0.15s;
     }
-    #cs-navigation .cs-li:nth-of-type(4) {
+    #ke-navigation .ke-li:nth-of-type(4) {
       transition-delay: 0.2s;
     }
-    #cs-navigation .cs-li:nth-of-type(5) {
+    #ke-navigation .ke-li:nth-of-type(5) {
       transition-delay: 0.25s;
     }
-    #cs-navigation .cs-li:nth-of-type(6) {
+    #ke-navigation .ke-li:nth-of-type(6) {
       transition-delay: 0.3s;
     }
-    #cs-navigation .cs-li:nth-of-type(7) {
+    #ke-navigation .ke-li:nth-of-type(7) {
       transition-delay: 0.35s;
     }
-    #cs-navigation .cs-li:nth-of-type(8) {
+    #ke-navigation .ke-li:nth-of-type(8) {
       transition-delay: 0.4s;
     }
-    #cs-navigation .cs-li:nth-of-type(9) {
+    #ke-navigation .ke-li:nth-of-type(9) {
       transition-delay: 0.45s;
     }
-    #cs-navigation .cs-li:nth-of-type(10) {
+    #ke-navigation .ke-li:nth-of-type(10) {
       transition-delay: 0.5s;
     }
-    #cs-navigation .cs-li:nth-of-type(11) {
+    #ke-navigation .ke-li:nth-of-type(11) {
       transition-delay: 0.55s;
     }
-    #cs-navigation .cs-li:nth-of-type(12) {
+    #ke-navigation .ke-li:nth-of-type(12) {
       transition-delay: 0.6s;
     }
-    #cs-navigation .cs-li:nth-of-type(13) {
+    #ke-navigation .ke-li:nth-of-type(13) {
       transition-delay: 0.65s;
     }
-    #cs-navigation .cs-li-link {
+    #ke-navigation .ke-li-link {
       /* 16px - 24px */
       font-size: clamp(1rem, 2.5vw, 1.5rem);
       line-height: 1.2em;
@@ -237,7 +237,7 @@ body {
       display: inline-block;
       position: relative;
     }
-    #cs-navigation .cs-li-link:before {
+    #ke-navigation .ke-li-link:before {
       /* active state underline */
       content: "";
       width: 100%;
@@ -249,10 +249,10 @@ body {
       bottom: -0.125rem;
       left: 0;
     }
-    #cs-navigation .cs-li-link.cs-active:before {
+    #ke-navigation .ke-li-link.ke-active:before {
       display: block;
     }
-    #cs-navigation .cs-button-solid {
+    #ke-navigation .ke-button-solid {
       display: none;
     }
   }
@@ -263,30 +263,30 @@ body {
   /* Mobile - 1023px */  
   @media only screen and (max-width: 63.9375rem) {
     
-    #cs-navigation .cs-li {
+    #ke-navigation .ke-li {
       text-align: center;
       width: 100%;
       display: block;
     }
-    #cs-navigation .cs-dropdown {
+    #ke-navigation .ke-dropdown {
       color: var(--bodyTextColorWhite);
       position: relative;
     }
-    #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
+    #ke-navigation .ke-dropdown.ke-active .ke-drop-ul {
       height: auto;
       margin: 0.75rem 0 0 0;
       padding: 0.75rem 0;
       opacity: 1;
       visibility: visible;
     }
-    #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
+    #ke-navigation .ke-dropdown.ke-active .ke-drop-link {
       opacity: 1;
     }
-    #cs-navigation .cs-dropdown .cs-li-link {
+    #ke-navigation .ke-dropdown .ke-li-link {
       position: relative;
       transition: opacity 0.3s;
     }
-    #cs-navigation .cs-drop-icon {
+    #ke-navigation .ke-drop-icon {
       width: 0.9375rem;
       height: auto;
       position: absolute;
@@ -294,7 +294,7 @@ body {
       right: -1.25rem;
       transform: translateY(-50%);
     }
-    #cs-navigation .cs-drop-ul {
+    #ke-navigation .ke-drop-ul {
       width: 100%;
       height: 0;
       margin: 0;
@@ -312,10 +312,10 @@ body {
     }
 
     
-    #cs-navigation .cs-drop-li {
+    #ke-navigation .ke-drop-li {
       list-style: none;
     }
-    #cs-navigation .cs-li-link.cs-drop-link {
+    #ke-navigation .ke-li-link.ke-drop-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 2vw, 1.25rem);
       color: #EFEFEF;
@@ -323,27 +323,27 @@ body {
   }
   /* Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
-    #cs-navigation .cs-dropdown {
+    #ke-navigation .ke-dropdown {
       position: relative;
     }
-    #cs-navigation .cs-dropdown:hover {
+    #ke-navigation .ke-dropdown:hover {
       cursor: pointer;
     }
-    #cs-navigation .cs-dropdown:hover .cs-drop-ul {
+    #ke-navigation .ke-dropdown:hover .ke-drop-ul {
       opacity: 1;
       visibility: visible;
       transform: scaleY(1);
     }
-    #cs-navigation .cs-dropdown:hover .cs-drop-li {
+    #ke-navigation .ke-dropdown:hover .ke-drop-li {
       opacity: 1;
       transform: translateY(0);
     }
-    #cs-navigation .cs-drop-icon {
+    #ke-navigation .ke-drop-icon {
       width: 0.9375rem;
       height: auto;
       display: inline-block;
     }
-    #cs-navigation .cs-drop-ul {
+    #ke-navigation .ke-drop-ul {
       min-width: 12.5rem;
       margin: 0;
       padding: 0;
@@ -352,8 +352,9 @@ body {
       opacity: 0;
       border-bottom: 5px solid var(--primary);
       visibility: hidden;
-      columns: 2;
-      /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+      /*       
+      columns: 2; 
+      */
       position: absolute;
       top: 100%;
       z-index: -100;
@@ -362,7 +363,7 @@ body {
       transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
       transform-origin: top;
     }
-    #cs-navigation .cs-drop-li {
+    #ke-navigation .ke-drop-li {
       font-size: 1rem;
       text-decoration: none;
       list-style: none;
@@ -374,7 +375,7 @@ body {
       transform: translateY(-0.625rem);
       transition: opacity 0.6s, transform 0.6s;
     }
-    #cs-navigation .cs-li-link.cs-drop-link {
+    #ke-navigation .ke-li-link.ke-drop-link {
       font-size: 1rem;
       line-height: 1.5em;
       text-decoration: none;
@@ -388,11 +389,11 @@ body {
       display: block;
       transition: color 0.3s, background-color 0.3s;
     }
-    #cs-navigation .cs-li-link.cs-drop-link:hover {
+    #ke-navigation .ke-li-link.ke-drop-link:hover {
       
       background-color: #B91D1F;
     }
-    #cs-navigation .cs-li-link.cs-drop-link:before {
+    #ke-navigation .ke-li-link.ke-drop-link:before {
       display: none;
     }
   }
@@ -411,7 +412,7 @@ body {
         white-space: nowrap;
     }
 
-    #cs-navigation {
+    #ke-navigation {
       width: 100%;
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
@@ -421,7 +422,7 @@ body {
       position: relative;
       z-index: 10000;
     }
-    #cs-navigation .cs-container {
+    #ke-navigation .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -431,10 +432,10 @@ body {
       gap: 1.5rem;
       background-color: #30312D;
     }
-    #cs-navigation .cs-toggle {
+    #ke-navigation .ke-toggle {
       display: none;
     }
-    #cs-navigation .cs-logo {
+    #ke-navigation .ke-logo {
       width: 18.4%;
       max-width: 21.875rem;
       height: 4.0625rem;
@@ -446,13 +447,13 @@ body {
       align-items: center;
       z-index: 100;
     }
-    #cs-navigation .cs-logo img {
+    #ke-navigation .ke-logo img {
       width: 100%;
       height: 100%;
       /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
       object-fit: contain;
     }
-    #cs-navigation .cs-ul {
+    #ke-navigation .ke-ul {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -462,13 +463,13 @@ body {
       /* 20px - 36px */
       gap: clamp(1.25rem, 2.6vw, 2.25rem);
     }
-    #cs-navigation .cs-li {
+    #ke-navigation .ke-li {
       list-style: none;
       padding: 2rem 0;
       /* prevent flexbox from squishing it */
       flex: none;
     }
-    #cs-navigation .cs-li-link {
+    #ke-navigation .ke-li-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1vw, 2rem);
       font-weight: bolder;
@@ -479,13 +480,13 @@ body {
       display: block;
       position: relative;
     }
-    #cs-navigation .cs-li-link:hover:before {
+    #ke-navigation .ke-li-link:hover:before {
       width: 100%;
     }
-    #cs-navigation .cs-li-link.cs-active:before {
+    #ke-navigation .ke-li-link.ke-active:before {
       width: 100%;
     }
-    #cs-navigation .cs-li-link:before {
+    #ke-navigation .ke-li-link:before {
       /* active state underline */
       content: "";
       width: 0%;
@@ -498,7 +499,7 @@ body {
       left: 0;
       transition: width 0.3s;
     }
-    #cs-navigation .cs-button-solid {
+    #ke-navigation .ke-button-solid {
       font-size: 1rem;
       font-weight: 600;
       /* 46px - 56px */
@@ -519,7 +520,7 @@ body {
       position: relative;
       z-index: 1;
     }
-    #cs-navigation .cs-button-solid:before {
+    #ke-navigation .ke-button-solid:before {
       content: "";
       width: 0%;
       height: 100%;
@@ -532,7 +533,7 @@ body {
       z-index: -1;
       transition: width 0.3s all;
     }
-    #cs-navigation .cs-button-solid:hover:before {
+    #ke-navigation .ke-button-solid:hover:before {
       width: 100%;
     }
   }
@@ -553,7 +554,7 @@ body {
       position: relative;
       z-index: 1;
     }
-    #hero-1426 .cs-background {
+    #hero-1426 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -562,7 +563,7 @@ body {
       left: 0;
       z-index: -2;
     }
-    #hero-1426 .cs-video {
+    #hero-1426 .ke-video {
       width: 100%;
       height: 100%;
       display: block;
@@ -582,7 +583,7 @@ body {
       z-index: 3;
       background: linear-gradient(to bottom, transparent, #272724);
     }
-    #hero-1426 .cs-background:before {
+    #hero-1426 .ke-background:before {
       /* Overlay */
       content: "";
       width: 100%;
@@ -597,7 +598,7 @@ body {
       /* prevents the cursor from interacting with it */
       pointer-events: none;
     }
-    #hero-1426 .cs-background img {
+    #hero-1426 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -605,7 +606,7 @@ body {
       width: 100%;
       object-fit: cover;
     }
-    #hero-1426 .cs-container {
+    #hero-1426 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -615,11 +616,11 @@ body {
       align-items: center;
       gap: 3rem;
     }
-    #hero-1426 .cs-content {
+    #hero-1426 .ke-content {
       width: 100%;
       max-width: 39.375rem;
     }
-    #hero-1426 .cs-title {
+    #hero-1426 .ke-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
       font-weight: 700;
@@ -631,7 +632,7 @@ body {
       color: #EFEFEF;
       position: relative;
     }
-    #hero-1426 .cs-text {
+    #hero-1426 .ke-text {
       /* 16px - 20px */
       font-size: clamp(1rem, 1.95vw, 1.25rem);
       line-height: 1.5em;
@@ -643,13 +644,13 @@ body {
       margin-bottom: 2rem;
       color: #EFEFEF;
     }
-    #hero-1426 .cs-button-group {
+    #hero-1426 .ke-button-group {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
     }
-    #hero-1426 .cs-button-solid {
+    #hero-1426 .ke-button-solid {
       font-size: 1rem;
       font-weight: 600;
       /* 46px - 56px */
@@ -671,7 +672,7 @@ body {
       z-index: 1;
 
     }
-    #hero-1426 .cs-button-solid:before {
+    #hero-1426 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -684,11 +685,11 @@ body {
       border-radius: 0.5rem;
       transition: width 0.3s all;
     }
-    #hero-1426 .cs-button-solid:hover:before {
+    #hero-1426 .ke-button-solid:hover:before {
       width: 100%;
       background-color: #272724;
     }
-    #hero-1426 .cs-button1 {
+    #hero-1426 .ke-button1 {
       background-color: #B91D1F;
     }
   }
@@ -706,17 +707,17 @@ body {
     background: url('/images/quote.jpg') center center/cover no-repeat fixed;
     position: relative;
   }
-  #quote-561 .cs-content {
+  #quote-561 .ke-content {
     text-align: center;
     padding: 5rem;
   }
-  #quote-561 .cs-container {
+  #quote-561 .ke-container {
     position: relative;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  #quote-561 .cs-quote {
+  #quote-561 .ke-quote {
     font-size: 1.5em;
     line-height: 1.2em;
     font-weight: 600;
@@ -725,7 +726,7 @@ body {
     padding-top: 2rem;
   }
 
-  #quote-561 .cs-name {
+  #quote-561 .ke-name {
     font-size: clamp(1rem, 1.7vw, 1.25rem);
     line-height: 1.2em;
     font-weight: bolder;
@@ -736,7 +737,7 @@ body {
     letter-spacing: 0.01em;
   }
 
-  #quote-561 .cs-company {
+  #quote-561 .ke-company {
     font-size: clamp(1rem, 1.7vw, 1.25rem);
     line-height: 1.2em;
     font-weight: 400;
@@ -749,9 +750,9 @@ body {
     text-align: center;
   }
 
-  #quote-561 .cs-name,
-  #quote-561 .cs-company {
-    color: #B91D1F;
+  #quote-561 .ke-name,
+  #quote-561 .ke-company {
+    color: white;
   }
 }
 
@@ -767,7 +768,7 @@ body {
       z-index: 10;
       padding-bottom: 2rem;
   }
-  #services-1354 .cs-container {
+  #services-1354 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -778,17 +779,17 @@ body {
       gap: clamp(3rem, 6vw, 4rem);
       
   }
-  #services-1354 .cs-content {
+  #services-1354 .ke-content {
       /* set text align to left if content needs to be left aligned */
       width: 100%;
       display: flex;
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
   }
-  #services-1354 .cs-title {
+  #services-1354 .ke-title {
       line-height: 1.2;
   }
-  #services-1354 .cs-card-group {
+  #services-1354 .ke-card-group {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -797,7 +798,7 @@ body {
       /* 16px - 20px */
       gap: clamp(1rem, 2vw, 1.25rem);
   }
-  #services-1354 .cs-item {
+  #services-1354 .ke-item {
       text-align: center;
       list-style: none;
       width: 100%;
@@ -820,18 +821,18 @@ body {
       position: relative;
       z-index: 1;
   }
-  #services-1354 .cs-item:hover .cs-background:before {
+  #services-1354 .ke-item:hover .ke-background:before {
       background-color: var(--primary);
       opacity: 0.84;
   }
-  #services-1354 .cs-item:hover .cs-background img {
+  #services-1354 .ke-item:hover .ke-background img {
       transform: scale(1.2);
   }
-  #services-1354 .cs-link {
+  #services-1354 .ke-link {
       text-decoration: none;
       width: 100%;
       height: 100%;
-      /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+      /* padding goes on the link, not the ke-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the ke-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
       padding: 1.5rem;
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
@@ -839,18 +840,18 @@ body {
       justify-content: center;
       align-items: center;
   }
-  #services-1354 .cs-h3 {
+  #services-1354 .ke-h3 {
       line-height: 1.2em;
       text-align: inherit;
       margin: 0;
       color: #EFEFEF;
       transition: color 0.3s;
   }
-  #services-1354 .cs-span {
+  #services-1354 .ke-span {
       /* forces the h3 to alwasy be two lines */
       display: block;
   }
-  #services-1354 .cs-background {
+  #services-1354 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -859,7 +860,7 @@ body {
       left: 0;
       z-index: -1;
   }
-  #services-1354 .cs-background:before {
+  #services-1354 .ke-background:before {
       /* background color overlay */
       content: "";
       position: absolute;
@@ -875,7 +876,7 @@ body {
           background-color 0.3s,
           opacity 0.3s;
   }
-  #services-1354 .cs-background img {
+  #services-1354 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -888,16 +889,16 @@ body {
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-  #services-1354 .cs-item {
+  #services-1354 .ke-item {
       grid-column: span 6;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #services-1354 .cs-content {
+  #services-1354 .ke-content {
     display: none;
   }
-  #services-1354 .cs-item {
+  #services-1354 .ke-item {
       grid-column: span 3;
       margin-top: -10rem;
   }
@@ -916,7 +917,7 @@ body {
       position: relative;
       z-index: 1;
   }
-  #project-1144 .cs-container {
+  #project-1144 .ke-container {
       width: 90%;
       /* changes to 1280px at tablet */
       max-width: 49rem;
@@ -927,7 +928,7 @@ body {
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #project-1144 .cs-content {
+  #project-1144 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
@@ -937,11 +938,11 @@ body {
       align-items: flex-start;
   }
 
-  #project-1144 .cs-title {
+  #project-1144 .ke-title {
       /* max width of 18 characters, incldues spaces between words */
       max-width: 20ch;
   }
-  #project-1144 .cs-button-solid {
+  #project-1144 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -963,7 +964,7 @@ body {
     position: relative;
     z-index: 1;
   }
-  #project-1144 .cs-button-solid:before {
+  #project-1144 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -976,13 +977,13 @@ body {
       border-radius: 0.5rem;
       transition: width 0.3s all;
   }
-  #project-1144 .cs-button-solid:hover {
+  #project-1144 .ke-button-solid:hover {
       color: #EFEFEF;
   }
-  #project-1144 .cs-button-solid:hover:before {
+  #project-1144 .ke-button-solid:hover:before {
       width: 100%;
   }
-  #project-1144 .cs-card-group {
+  #project-1144 .ke-card-group {
       width: 100%;
       padding: 0;
       margin: 0;
@@ -990,7 +991,7 @@ body {
       grid-template-columns: repeat(12, 1fr);
       gap: 1.25rem;
   }
-  #project-1144 .cs-item {
+  #project-1144 .ke-item {
       text-align: left;
       list-style: none;
       border-radius: 1rem;
@@ -1007,14 +1008,14 @@ body {
           box-shadow 0.3s,
           transform 0.3s;
   }
-  #project-1144 .cs-item:hover {
+  #project-1144 .ke-item:hover {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
-  #project-1144 .cs-item:hover .cs-picture img {
+  #project-1144 .ke-item:hover .ke-picture img {
       opacity: 0.3;
       transform: scale(1.1);
   }
-  #project-1144 .cs-picture {
+  #project-1144 .ke-picture {
       width: 100%;
       height: 15rem;
       background-color: #1a1a1a;
@@ -1026,7 +1027,7 @@ body {
       position: relative;
       z-index: 1;
   }
-  #project-1144 .cs-picture img {
+  #project-1144 .ke-picture img {
       position: absolute;
       top: 0;
       left: 0;
@@ -1037,7 +1038,7 @@ body {
           transform 0.6s,
           opacity 0.3s;
   }
-  #project-1144 .cs-flex {
+  #project-1144 .ke-flex {
       height: 100%;
       padding: 1.5rem;
       /* prevents padding and border from affecting height and width */
@@ -1048,7 +1049,7 @@ body {
       position: relative;
       z-index: 2;
   }
-  #project-1144 .cs-h3 {
+  #project-1144 .ke-h3 {
       font-size: 1.25rem;
       text-align: inherit;
       line-height: 1.2em;
@@ -1057,7 +1058,7 @@ body {
       margin: 0 0 0.75rem 0;
       transition: color 0.3s;
   }
-  #project-1144 .cs-item-text {
+  #project-1144 .ke-item-text {
       /* 14px - 16px */
       display: none;
       font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -1066,7 +1067,7 @@ body {
       margin: 0 0 1.25rem;
       color: var(--bodyTextColor);
   }
-  #project-1144 .cs-link {
+  #project-1144 .ke-link {
       font-size: 1rem;
       line-height: 1.2em;
       font-weight: 700;
@@ -1077,10 +1078,10 @@ body {
       align-items: center;
       justify-content: center;
   }
-  #project-1144 .cs-link:hover .cs-arrow {
+  #project-1144 .ke-link:hover .ke-arrow {
       transform: translateX(0.25rem);
   }
-  #project-1144 .cs-arrow {
+  #project-1144 .ke-arrow {
       width: 1.25rem;
       height: auto;
       transition: transform 0.3s;
@@ -1088,19 +1089,19 @@ body {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #project-1144 .cs-container {
+  #project-1144 .ke-container {
       max-width: 80rem;
   }
-  #project-1144 .cs-content {
+  #project-1144 .ke-content {
       text-align: left;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
   }
-  #project-1144 .cs-item {
+  #project-1144 .ke-item {
       grid-column: span 4;
   }
-  #project-1144 .cs-item-text {
+  #project-1144 .ke-item-text {
     /* 14px - 16px */
     display: block;
     font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -1117,7 +1118,7 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  .cs-title {
+  .ke-title {
   color: #EFEFEF;
   font-size: 1.7em;
   }
@@ -1126,7 +1127,7 @@ body {
       margin: 2rem 0rem;
       transform: scaleX(-1);
   }
-  #rsbs-1129 .cs-container {
+  #rsbs-1129 .ke-container {
     width: 90%;
     max-width: 80rem;
     margin: auto;
@@ -1136,12 +1137,12 @@ body {
     gap: clamp(3rem, 6vw, 4rem);
 
 }
-  #rsbs-1129 .cs-content {
+  #rsbs-1129 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
       max-width: 32.625rem;
-      /* moved section padding to cs-content so the cs-background can be full width */
+      /* moved section padding to ke-content so the ke-background can be full width */
       padding: var(--sectionPadding);
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
@@ -1151,15 +1152,15 @@ body {
       align-items: flex-start;
       transform: scaleX(-1);
   }
-  #rsbs-1129 .cs-text {
+  #rsbs-1129 .ke-text {
       margin-bottom: 1rem;
       font-weight: 400;
       font-size: 1.2em;
   }
-  #rsbs-1129 .cs-text:last-of-type {
+  #rsbs-1129 .ke-text:last-of-type {
       margin-bottom: 2rem;
   }
-  #rsbs-1129 .cs-button-solid {
+  #rsbs-1129 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -1179,7 +1180,7 @@ body {
     position: relative;
     z-index: 1;
   }
-  #rsbs-1129 .cs-button-solid:before {
+  #rsbs-1129 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -1192,10 +1193,10 @@ body {
       border-radius: 0.25rem;
       transition: width 0.3s all;
   }
-  #rsbs-1129 .cs-button-solid:hover:before {
+  #rsbs-1129 .ke-button-solid:hover:before {
       width: 100%;
   }
-  #rsbs-1129 .cs-background {
+  #rsbs-1129 .ke-background {
       display: block;
       position: relative;
       width: 100%;
@@ -1203,7 +1204,7 @@ body {
       z-index: 1;
       margin-top: 2rem;
   }
-  #rsbs-1129 .cs-background img {
+  #rsbs-1129 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -1224,7 +1225,7 @@ body {
 
 /* Styles for screens with a minimum width of 48rem (768px) */
 @media only screen and (min-width: 48rem) {
-.cs-title {
+.ke-title {
   color: #EFEFEF;
   font-size: 2.5em;
   }
@@ -1232,12 +1233,12 @@ body {
     padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
     margin: 5rem 0rem;
 }
-#rsbs-1129 .cs-container {
+#rsbs-1129 .ke-container {
     flex-direction: row; /* Switch to a horizontal layout for screens 48rem and above */
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the start of the cross axis */
 }
-#rsbs-1129 .cs-background {
+#rsbs-1129 .ke-background {
   display: block;
     width: 50%;
     height: auto;
@@ -1246,12 +1247,12 @@ body {
     bottom: 0;
     left: 50%;
 }
-#rsbs-1129 .cs-content {
+#rsbs-1129 .ke-content {
     width: 45%;
     padding: 0;
     text-align: left; /* Align text content to the left */
 }
-#rsbs-1129 .cs-background img {
+#rsbs-1129 .ke-background img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1293,7 +1294,7 @@ justify-content: center;
     background: url(/images/white-waves.svg);
   }
 }
-  #uganda-999 .cs-container {
+  #uganda-999 .ke-container {
     width: 90%;
     max-width: 80rem;
     margin: auto;
@@ -1303,12 +1304,12 @@ justify-content: center;
     gap: clamp(3rem, 6vw, 4rem);
     padding: 2rem;
 }
-  #uganda-999 .cs-content {
+  #uganda-999 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
       max-width: 32.625rem;
-      /* moved section padding to cs-content so the cs-background can be full width */
+      /* moved section padding to ke-content so the ke-background can be full width */
       padding: var(--sectionPadding);
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
@@ -1317,18 +1318,18 @@ justify-content: center;
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
   }
-  #uganda-999 .cs-title {
+  #uganda-999 .ke-title {
    line-height: 1.2; 
   }
-  #uganda-999 .cs-text {
+  #uganda-999 .ke-text {
       margin-bottom: 1rem;
       font-weight: 400;
       font-size: large;      
   }
-  #uganda-999 .cs-text:last-of-type {
+  #uganda-999 .ke-text:last-of-type {
       margin-bottom: 2rem;
   }
-  #uganda-999 .cs-button-solid {
+  #uganda-999 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -1349,7 +1350,7 @@ justify-content: center;
     position: relative;
     z-index: 1;
   }
-  #uganda-999 .cs-button-solid:before {
+  #uganda-999 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -1362,10 +1363,10 @@ justify-content: center;
       border-radius: 0.25rem;
       transition: width 0.3s all;
   }
-  #uganda-999 .cs-button-solid:hover:before {
+  #uganda-999 .ke-button-solid:hover:before {
       width: 100%;
   }
-  #uganda-999 .cs-background {
+  #uganda-999 .ke-background {
       display: block;
       position: relative;
       width: 100%;
@@ -1373,7 +1374,7 @@ justify-content: center;
       z-index: 1;
       margin-top: 2rem;
   }
-  #uganda-999 .cs-background img {
+  #uganda-999 .ke-background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1394,12 +1395,12 @@ justify-content: center;
     margin-top: 2rem;
     transform: scaleX(-1);
 }
-#uganda-999 .cs-container {
+#uganda-999 .ke-container {
     flex-direction: row; /* Switch to a horizontal layout for screens 48rem and above */
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the start of the cross axis */
 }
-#uganda-999 .cs-background {
+#uganda-999 .ke-background {
   display: block;
     width: 50%;
     height: auto;
@@ -1409,13 +1410,13 @@ justify-content: center;
     left: 50%;
     margin: 0;
 }
-#uganda-999 .cs-content {
+#uganda-999 .ke-content {
   transform: scaleX(-1);
     width: 45%;
     padding: 0;
     text-align: left; /* Align text content to the left */
 }
-#uganda-999 .cs-background img {
+#uganda-999 .ke-background img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1443,7 +1444,7 @@ background-color: #B91D1F;
     z-index: 1;
     padding: 0rem 2rem;
   }
-  #blog-1580 .cs-container {
+  #blog-1580 .ke-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 36.5rem;
@@ -1454,7 +1455,7 @@ background-color: #B91D1F;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #blog-1580 .cs-content {
+  #blog-1580 .ke-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -1463,10 +1464,10 @@ background-color: #B91D1F;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #blog-1580 .cs-title {
+  #blog-1580 .ke-title {
     max-width: 20ch;
   }
-  #blog-1580 .cs-button-solid {
+  #blog-1580 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -1488,7 +1489,7 @@ background-color: #B91D1F;
     position: relative;
     z-index: 1;
   }
-  #blog-1580 .cs-button-solid:before {
+  #blog-1580 .ke-button-solid:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -1501,14 +1502,14 @@ background-color: #B91D1F;
     z-index: -1;
     transition: width .3s all;
   }
-  #blog-1580 .cs-button-solid:hover {
+  #blog-1580 .ke-button-solid:hover {
     color: #EFEFEF;
     
   }
-  #blog-1580 .cs-button-solid:hover:before {
+  #blog-1580 .ke-button-solid:hover:before {
     width: 100%;
   }
-  #blog-1580 .cs-card-group {
+  #blog-1580 .ke-card-group {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1518,7 +1519,7 @@ background-color: #B91D1F;
     /* 16px - 20px */
     column-gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #blog-1580 .cs-item {
+  #blog-1580 .ke-item {
     text-align: left;
     list-style: none;
     overflow: hidden;
@@ -1527,17 +1528,17 @@ background-color: #B91D1F;
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;
   }
-  #blog-1580 .cs-item:hover .cs-picture img {
+  #blog-1580 .ke-item:hover .ke-picture img {
     opacity: .3;
     transform: scale(1.1);
   }
-  #blog-1580 .cs-link {
+  #blog-1580 .ke-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  #blog-1580 .cs-picture {
+  #blog-1580 .ke-picture {
     width: 100%;
     min-height: 13.75rem;
     /* changes at tablet */
@@ -1554,7 +1555,7 @@ background-color: #B91D1F;
     position: relative;
     z-index: 1;
   }
-  #blog-1580 .cs-picture img {
+  #blog-1580 .ke-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1564,7 +1565,7 @@ background-color: #B91D1F;
     border-radius: 0.5rem;
     transition: transform .6s, opacity .3s;
   }
-  #blog-1580 .cs-flex {
+  #blog-1580 .ke-flex {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1572,7 +1573,7 @@ background-color: #B91D1F;
     position: relative;
     z-index: 2;
   }
-  #blog-1580 .cs-date {
+  #blog-1580 .ke-date {
     font-size: 1rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -1589,7 +1590,7 @@ background-color: #B91D1F;
     bottom: 100%;
     z-index: 2;
   }
-  #blog-1580 .cs-h3 {
+  #blog-1580 .ke-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     text-align: inherit;
@@ -1600,7 +1601,7 @@ background-color: #B91D1F;
     margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
     transition: color .3s;
   }
-  #blog-1580 .cs-item-text {
+  #blog-1580 .ke-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -1611,27 +1612,27 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #blog-1580 .cs-container {
+  #blog-1580 .ke-container {
     max-width: 80rem;
   }
-  #blog-1580 .cs-content {
+  #blog-1580 .ke-content {
     text-align: left;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  #blog-1580 .cs-item {
+  #blog-1580 .ke-item {
     grid-column: span 4;
   }
-  #blog-1580 .cs-picture {
+  #blog-1580 .ke-picture {
     min-height: 11.25rem;
     /* 180px - 284px */
     height: clamp(11.25rem, 23vw, 17.75rem);
     max-height: 100%;
     border-radius: 0.5rem;
   }
-  #blog-1580 .cs-item-text {
+  #blog-1580 .ke-item-text {
     color: #EFEFEF;
   }
 }
@@ -1649,7 +1650,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #footer-1147 .cs-container {
+  #footer-1147 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -1657,7 +1658,7 @@ background-color: #B91D1F;
       flex-direction: column;
       align-items: center;
   }
-  #footer-1147 .cs-top {
+  #footer-1147 .ke-top {
       width: 100%;
       /* 32px - 40px */
       margin-bottom: clamp(2rem, 4vw, 2.5rem);
@@ -1669,7 +1670,7 @@ background-color: #B91D1F;
       justify-content: center;
       gap: 2rem;
   }
-  #footer-1147 .cs-ul {
+  #footer-1147 .ke-ul {
       margin: 0;
       padding: 0;
       display: flex;
@@ -1680,10 +1681,10 @@ background-color: #B91D1F;
       /* 28px - 40px */
       column-gap: clamp(1.75rem, 4vw, 2.5rem);
   }
-  #footer-1147 .cs-li {
+  #footer-1147 .ke-li {
       list-style: none;
   }
-  #footer-1147 .cs-link {
+  #footer-1147 .ke-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
@@ -1693,28 +1694,28 @@ background-color: #B91D1F;
       display: block;
       transition: color 0.3s;
   }
-  #footer-1147 .cs-link:hover {
+  #footer-1147 .ke-link:hover {
       color: #B91D1F;
   }
-  #footer-1147 .cs-logo {
+  #footer-1147 .ke-logo {
       width: 10.5rem;
       height: auto;
       display: block;
   }
-  #footer-1147 .cs-logo-img {
+  #footer-1147 .ke-logo-img {
       width: 100%;
       height: auto;
       display: block;
       padding-top: 2rem;
   }
-  #footer-1147 .cs-bottom {
+  #footer-1147 .ke-bottom {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1.5rem;
   }
-  #footer-1147 .cs-social {
+  #footer-1147 .ke-social {
       margin: 0;
       padding: 0;
       display: flex;
@@ -1722,10 +1723,10 @@ background-color: #B91D1F;
       align-items: center;
       gap: 0.5rem;
   }
-  #footer-1147 .cs-social-li {
+  #footer-1147 .ke-social-li {
       list-style: none;
   }
-  #footer-1147 .cs-social-link {
+  #footer-1147 .ke-social-link {
       width: 2rem;
       height: 2rem;
       background-color: #272724;
@@ -1735,36 +1736,36 @@ background-color: #B91D1F;
       align-items: center;
       transition: background-color 0.3s;
   }
-  #footer-1147 .cs-social-link:hover {
+  #footer-1147 .ke-social-link:hover {
       background-color: #B91D1F;
   }
-  #footer-1147 .cs-social-link:hover .cs-social-icon {
+  #footer-1147 .ke-social-link:hover .ke-social-icon {
       filter: grayscale(1) brightness(0);
       opacity: 1;
   }
-  #footer-1147 .cs-social-icon {
+  #footer-1147 .ke-social-icon {
       width: 0.75rem;
       height: auto;
       display: block;
       opacity: 0.5;
   }
-  #footer-1147 .cs-copyright {
+  #footer-1147 .ke-copyright {
       font-size: 1rem;
       line-height: 1.5em;
       margin: 0;
       color: #EFEFEF;
       display: block;
   }
-  #footer-1147 .cs-copyright-link {
+  #footer-1147 .ke-copyright-link {
       font-size: inherit;
       text-decoration: none;
       color: inherit;
       transition: color 0.3s;
   }
-  #footer-1147 .cs-copyright-link:hover {
+  #footer-1147 .ke-copyright-link:hover {
       color: var(--secondary);
   }
-  #footer-1147 .cs-background {
+  #footer-1147 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -1773,7 +1774,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: -1;
   }
-  #footer-1147 .cs-background:before {
+  #footer-1147 .ke-background:before {
       /* background color overlay */
       content: "";
       position: absolute;
@@ -1786,7 +1787,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: 1;
   }
-  #footer-1147 .cs-background img {
+  #footer-1147 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -1798,12 +1799,12 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #footer-1147 .cs-top {
+  #footer-1147 .ke-top {
     padding-top: 5rem;
       flex-direction: row;
       justify-content: space-between;
   }
-  #footer-1147 .cs-bottom {
+  #footer-1147 .ke-bottom {
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: 5rem;
@@ -1821,7 +1822,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #contact-1268 .cs-container {
+  #contact-1268 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -1830,7 +1831,7 @@ background-color: #B91D1F;
       align-items: stretch;
       flex-direction: column;
   }
-  #contact-1268 .cs-content {
+  #contact-1268 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -1842,7 +1843,7 @@ background-color: #B91D1F;
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
   }
-  #contact-1268 .cs-ul {
+  #contact-1268 .ke-ul {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1854,14 +1855,14 @@ background-color: #B91D1F;
     position: relative;
     text-align: start;
 }
-#contact-1268 .cs-li {
+#contact-1268 .ke-li {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.25rem;
 }
-#contact-1268 .cs-header {
+#contact-1268 .ke-header {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -1869,7 +1870,7 @@ background-color: #B91D1F;
     color: #B91D1F;
     display: block;
 }
-#contact-1268 .cs-link {
+#contact-1268 .ke-link {
     font-size: 1rem;
     line-height: 1.5em;
     text-decoration: none;
@@ -1878,7 +1879,7 @@ background-color: #B91D1F;
     position: relative;
 }
 
-#contact-1268 .cs-icon-wrapper {
+#contact-1268 .ke-icon-wrapper {
     width: 3.75rem;
     height: 3.75rem;
     margin: 0;
@@ -1891,12 +1892,12 @@ background-color: #B91D1F;
     flex: none;
     transition: transform 0.3s;
 }
-#contact-1268 .cs-icon {
+#contact-1268 .ke-icon {
     width: 1.5rem;
     height: auto;
     display: block;
 }
-  #contact-1268 .cs-form-group {
+  #contact-1268 .ke-form-group {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -1914,16 +1915,16 @@ background-color: #B91D1F;
 
   }
 
-  #contact-1268 .cs-title {
+  #contact-1268 .ke-title {
       color: var(--bodyTextColorWhite);
       line-height: 1.2;
   }
-  #contact-1268 .cs-text {
+  #contact-1268 .ke-text {
       margin: 0;
       color: #EFEFEF;
       padding-bottom: 2rem;
   }
-  #contact-1268 .cs-h3 {
+  #contact-1268 .ke-h3 {
       font-size: 1.25rem;
       line-height: 1.2em;
       font-weight: 700;
@@ -1936,7 +1937,7 @@ background-color: #B91D1F;
       align-items: flex-start;
       gap: 1rem;
   }
-  #contact-1268 .cs-picture {
+  #contact-1268 .ke-picture {
       width: 3.25rem;
       height: 3.25rem;
       border-radius: 50%;
@@ -1948,7 +1949,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #contact-1268 .cs-picture:before {
+  #contact-1268 .ke-picture:before {
       content: "";
       width: 100%;
       height: 100%;
@@ -1959,7 +1960,7 @@ background-color: #B91D1F;
       top: 0;
       left: 0;
   }
-  #contact-1268 .cs-form {
+  #contact-1268 .ke-form {
       width: 100%;
       padding: 0;
       /* prevents flexbox from affecting height and width */
@@ -1968,7 +1969,7 @@ background-color: #B91D1F;
       grid-template-columns: repeat(12, 1fr);
       gap: 0.75rem;
   }
-  #contact-1268 .cs-label {
+  #contact-1268 .ke-label {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       color: var(--headerColor);
@@ -1979,7 +1980,7 @@ background-color: #B91D1F;
       align-items: flex-start;
       gap: 0.5rem;
   }
-  #contact-1268 .cs-input {
+  #contact-1268 .ke-input {
       font-size: 1rem;
       width: 100%;
       /* 46px - 56px */
@@ -1992,17 +1993,17 @@ background-color: #B91D1F;
       /* prevents padding from adding to height and width */
       box-sizing: border-box;
   }
-  #contact-1268 .cs-input::placeholder {
+  #contact-1268 .ke-input::placeholder {
       color: #7d799c;
       opacity: 0.6;
   }
-  #contact-1268 .cs-textarea {
+  #contact-1268 .ke-textarea {
       min-height: 7.5rem;
       padding-top: 1.5rem;
       margin-bottom: 1rem;
       font-family: inherit;
   }
-  #contact-1268 .cs-button-solid {
+  #contact-1268 .ke-button-solid {
       font-size: 1rem;
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -2024,7 +2025,7 @@ background-color: #B91D1F;
       box-sizing: border-box;
       transition: color 0.3s;
   }
-  #contact-1268 .cs-button-solid:before {
+  #contact-1268 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -2037,29 +2038,29 @@ background-color: #B91D1F;
       z-index: -1;
       transition: width 0.3s all;
   }
-  #contact-1268 .cs-button-solid:hover {
+  #contact-1268 .ke-button-solid:hover {
       color: #fff;
   }
-  #contact-1268 .cs-button-solid:hover:before {
+  #contact-1268 .ke-button-solid:hover:before {
       width: 100%;
   }
-  #contact-1268 .cs-submit {
+  #contact-1268 .ke-submit {
       width: 100%;
       margin: 0;
       color: var(--bodyTextColorWhite);
       border-radius: 0.5rem;
       grid-column: span 12;
   }
-  #contact-1268 .cs-submit:hover {
+  #contact-1268 .ke-submit:hover {
       cursor: pointer;
   }
-  #contact-1268 .cs-wrapper {
+  #contact-1268 .ke-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
   }
-  #contact-1268 .cs-card-group {
+  #contact-1268 .ke-card-group {
       width: 100%;
       max-width: 32.625rem;
       margin: 0;
@@ -2075,7 +2076,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #contact-1268 .cs-item {
+  #contact-1268 .ke-item {
       text-align: left;
       list-style: none;
       width: 100%;
@@ -2088,25 +2089,25 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #contact-1268 .cs-item:hover:before {
+  #contact-1268 .ke-item:hover:before {
       opacity: 1;
   }
-  #contact-1268 .cs-item:hover .cs-header,
-  #contact-1268 .cs-item:hover .cs-item-text,
-  #contact-1268 .cs-item:hover .cs-link {
+  #contact-1268 .ke-item:hover .ke-header,
+  #contact-1268 .ke-item:hover .ke-item-text,
+  #contact-1268 .ke-item:hover .ke-link {
       color: var(--bodyTextColorWhite);
   }
-  #contact-1268 .cs-item:hover .cs-text,
-  #contact-1268 .cs-item:hover .cs-link {
+  #contact-1268 .ke-item:hover .ke-text,
+  #contact-1268 .ke-item:hover .ke-link {
       opacity: 0.8;
   }
-  #contact-1268 .cs-item:hover .cs-link:hover {
+  #contact-1268 .ke-item:hover .ke-link:hover {
       color: var(--primary);
   }
-  #contact-1268 .cs-item:hover .cs-icon {
+  #contact-1268 .ke-item:hover .ke-icon {
       filter: grayscale(1) brightness(1000%);
   }
-  #contact-1268 .cs-item:before {
+  #contact-1268 .ke-item:before {
       /* hover border and background */
       content: "";
       width: 100%;
@@ -2121,7 +2122,7 @@ background-color: #B91D1F;
       z-index: -1;
       transition: opacity 0.3s;
   }
-  #contact-1268 .cs-header {
+  #contact-1268 .ke-header {
       font-size: 1.25rem;
       line-height: 1.2em;
       text-align: inherit;
@@ -2131,7 +2132,7 @@ background-color: #B91D1F;
       display: block;
       transition: color 0.3s;
   }
-  #contact-1268 .cs-item-text {
+  #contact-1268 .ke-item-text {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
@@ -2141,7 +2142,7 @@ background-color: #B91D1F;
       display: block;
       transition: color 0.3s;
   }
-  #contact-1268 .cs-link {
+  #contact-1268 .ke-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
@@ -2154,11 +2155,11 @@ background-color: #B91D1F;
       gap: 0.25rem;
       transition: color 0.3s;
   }
-  #contact-1268 .cs-icon {
+  #contact-1268 .ke-icon {
       width: 1rem;
       height: auto;
   }
-  #contact-1268 .cs-background {
+  #contact-1268 .ke-background {
       width: 100%;
       height: 100%;
       background-color: #1a1a1a;
@@ -2168,7 +2169,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: -1;
   }
-  #contact-1268 .cs-background img {
+  #contact-1268 .ke-background img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -2179,8 +2180,8 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #contact-1268 .cs-label:nth-of-type(1),
-  #contact-1268 .cs-label:nth-of-type(2) {
+  #contact-1268 .ke-label:nth-of-type(1),
+  #contact-1268 .ke-label:nth-of-type(2) {
       grid-column: span 6;
   }
 }
@@ -2190,41 +2191,41 @@ background-color: #B91D1F;
       /* moved padding back to the section container */
       padding: var(--sectionPadding);
   }
-  #contact-1268 .cs-container {
+  #contact-1268 .ke-container {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
   }
-  #contact-1268 .cs-content {
+  #contact-1268 .ke-content {
       text-align: left;
       margin: 0;
       padding: 0;
       align-items: flex-start;
   }
-  #contact-1268 .cs-form-group {
+  #contact-1268 .ke-form-group {
       width: 43%;
       max-width: 32.625rem;
       margin: 0;
       padding: 2rem;
   }
-  #contact-1268 .cs-form {
+  #contact-1268 .ke-form {
       padding: 0;
   }
-  #contact-1268 .cs-wrapper {
+  #contact-1268 .ke-wrapper {
       width: 50%;
       max-width: 32.75rem;
       flex: none;
       /* removes position from it so the absolutely positioned background group can now be positioned relative to the section container */
       position: initial;
   }
-  #contact-1268 .cs-background {
+  #contact-1268 .ke-background {
       width: 60vw;
       height: 100%;
       left: auto;
       right: 50%;
       top: 0;
   }
-  #contact-1268 .cs-card-group {
+  #contact-1268 .ke-card-group {
       padding: 0;
   }
 }
@@ -2239,7 +2240,7 @@ background-color: #B91D1F;
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    .cs-title {
+    .ke-title {
     color: #EFEFEF;
     font-size: 1.7em;
     }
@@ -2247,7 +2248,7 @@ background-color: #B91D1F;
         position: relative;
         margin: 2rem 0rem;
     }
-    #sbs-598 .cs-container {
+    #sbs-598 .ke-container {
       width: 90%;
       max-width: 80rem;
       margin: auto;
@@ -2256,12 +2257,12 @@ background-color: #B91D1F;
       align-items: center;
       gap: clamp(3rem, 6vw, 4rem);
   }
-    #sbs-598 .cs-content {
+    #sbs-598 .ke-content {
         /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
         max-width: 32.625rem;
-        /* moved section padding to cs-content so the cs-background can be full width */
+        /* moved section padding to ke-content so the ke-background can be full width */
         padding: var(--sectionPadding);
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
@@ -2270,15 +2271,15 @@ background-color: #B91D1F;
         /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
     }
-    #sbs-598 .cs-text {
+    #sbs-598 .ke-text {
         margin-bottom: 1rem;
         font-weight: 400;
         font-size: 1.2em;
     }
-    #sbs-598 .cs-text:last-of-type {
+    #sbs-598 .ke-text:last-of-type {
         margin-bottom: 2rem;
     }
-    #sbs-598 .cs-button-solid {
+    #sbs-598 .ke-button-solid {
       font-size: 1rem;
       font-weight: 600;
       /* 46px - 56px */
@@ -2298,7 +2299,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
     }
-    #sbs-598 .cs-button-solid:before {
+    #sbs-598 .ke-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -2311,17 +2312,17 @@ background-color: #B91D1F;
         border-radius: 0.25rem;
         transition: width 0.3s all;
     }
-    #sbs-598 .cs-button-solid:hover:before {
+    #sbs-598 .ke-button-solid:hover:before {
         width: 100%;
     }
-    #sbs-598 .cs-background {
+    #sbs-598 .ke-background {
         display: none;
         position: relative;
         width: 100%;
         height: 16rem;
         z-index: 1;
     }
-    #sbs-598 .cs-background img {
+    #sbs-598 .ke-background img {
         position: absolute;
         top: 0;
         left: 0;
@@ -2343,7 +2344,7 @@ background-color: #B91D1F;
 
 /* Styles for screens with a minimum width of 48rem (768px) */
 @media only screen and (min-width: 48rem) {
-  .cs-title {
+  .ke-title {
     color: #EFEFEF;
     font-size: 2.5em;
     }
@@ -2351,12 +2352,12 @@ background-color: #B91D1F;
       padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
       margin: 5rem 0rem;
   }
-  #sbs-598 .cs-container {
+  #sbs-598 .ke-container {
       flex-direction: row; /* Switch to a horizontal layout for screens 48rem and above */
       justify-content: space-between; /* Add space between items */
       align-items: flex-start; /* Align items to the start of the cross axis */
   }
-  #sbs-598 .cs-background {
+  #sbs-598 .ke-background {
     display: block;
       width: 50%;
       height: auto;
@@ -2365,7 +2366,7 @@ background-color: #B91D1F;
       bottom: 0;
       left: 50%;
   }
-  #sbs-598 .cs-background-sm {
+  #sbs-598 .ke-background-sm {
     display: block;
       width: 50%;
       height: auto;
@@ -2374,19 +2375,19 @@ background-color: #B91D1F;
       bottom: 0;
       left: 50%;
   }
-  #sbs-598 .cs-content {
+  #sbs-598 .ke-content {
       width: 45%;
       padding: 0;
       text-align: left; /* Align text content to the left */
   }
-  #sbs-598 .cs-background img {
+  #sbs-598 .ke-background img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
-#sbs-598 .cs-background-sm img {
+#sbs-598 .ke-background-sm img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2422,7 +2423,7 @@ justify-content: center;
       position: relative;
       z-index: 1;
   }
-  #banner-843 .cs-container {
+  #banner-843 .ke-container {
       text-align: center;
       width: 100%;
       max-width: 80rem;
@@ -2433,7 +2434,7 @@ justify-content: center;
       flex-direction: column;
       gap: 1rem;
   }
-  #banner-843 .cs-int-title {
+  #banner-843 .ke-int-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
       font-weight: 900;
@@ -2443,7 +2444,7 @@ justify-content: center;
       color: var(--bodyTextColorWhite);
       position: relative;
   }
-  #banner-843 .cs-background {
+  #banner-843 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -2452,7 +2453,7 @@ justify-content: center;
       left: 0;
       z-index: -1;
   }
-  #banner-843 .cs-background:before {
+  #banner-843 .ke-background:before {
       /* background color overlay */
       content: "";
       position: absolute;
@@ -2465,7 +2466,7 @@ justify-content: center;
       left: 0;
       z-index: 1;
   }
-  #banner-843 .cs-background img {
+  #banner-843 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -2474,7 +2475,7 @@ justify-content: center;
       /* Makes img tag act as a background image */
       object-fit: cover;
   }
-  #banner-843 .cs-wave {
+  #banner-843 .ke-wave {
       /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
       width: 48rem;
       height: auto;
@@ -2488,7 +2489,7 @@ justify-content: center;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #banner-843 .cs-wave {
+  #banner-843 .ke-wave {
       width: 100%;
       left: 0;
       transform: none;
@@ -2505,7 +2506,7 @@ justify-content: center;
       position: relative;
       margin: 2rem 0rem;
   }
-  #sbs-123 .cs-container {
+  #sbs-123 .ke-container {
     width: 90%;
     max-width: 80rem;
     margin: auto;
@@ -2514,12 +2515,12 @@ justify-content: center;
     align-items: center;
     gap: clamp(3rem, 6vw, 4rem);
 }
-  #sbs-123 .cs-content {
+  #sbs-123 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
       max-width: 32.625rem;
-      /* moved section padding to cs-content so the cs-background can be full width */
+      /* moved section padding to ke-content so the ke-background can be full width */
       padding: var(--sectionPadding);
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
@@ -2528,15 +2529,15 @@ justify-content: center;
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
   }
-  #sbs-123 .cs-text {
+  #sbs-123 .ke-text {
       margin-bottom: 1rem;
       font-weight: 400;
       font-size: 1.2em;
   }
-  #sbs-123 .cs-text:last-of-type {
+  #sbs-123 .ke-text:last-of-type {
       margin-bottom: 2rem;
   }
-  #sbs-123 .cs-button-solid {
+  #sbs-123 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -2556,7 +2557,7 @@ justify-content: center;
     position: relative;
     z-index: 1;
   }
-  #sbs-123 .cs-button-solid:before {
+  #sbs-123 .ke-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -2569,17 +2570,17 @@ justify-content: center;
       border-radius: 0.25rem;
       transition: width 0.3s all;
   }
-  #sbs-123 .cs-button-solid:hover:before {
+  #sbs-123 .ke-button-solid:hover:before {
       width: 100%;
   }
-  #sbs-123 .cs-background {
+  #sbs-123 .ke-background {
       display: none;
       position: relative;
       width: 100%;
       height: 16rem;
       z-index: 1;
   }
-  #sbs-123 .cs-background img {
+  #sbs-123 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -2601,12 +2602,12 @@ justify-content: center;
     padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
     margin: 5rem 0rem;
 }
-#sbs-123 .cs-container {
+#sbs-123 .ke-container {
     flex-direction: row; /* Switch to a horizontal layout for screens 48rem and above */
     justify-content: space-between; /* Add space between items */
     align-items: flex-start; /* Align items to the start of the cross axis */
 }
-#sbs-123 .cs-background {
+#sbs-123 .ke-background {
   display: block;
     width: 50%;
     height: auto;
@@ -2615,12 +2616,12 @@ justify-content: center;
     bottom: 0;
     left: 50%;
 }
-#sbs-123 .cs-content {
+#sbs-123 .ke-content {
     width: 45%;
     padding: 0;
     text-align: left; /* Align text content to the left */
 }
-#sbs-123 .cs-background img {
+#sbs-123 .ke-background img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2650,7 +2651,7 @@ background-color: #B91D1F;
     z-index: 1;
     overflow: hidden;
   }
-  #values-1571 .cs-container {
+  #values-1571 .ke-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 25rem;
@@ -2661,7 +2662,7 @@ background-color: #B91D1F;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #values-1571 .cs-content {
+  #values-1571 .ke-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -2670,7 +2671,7 @@ background-color: #B91D1F;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #values-1571 .cs-card-wrapper {
+  #values-1571 .ke-card-wrapper {
     width: 100%;
     display: grid;
     grid-auto-flow: row;
@@ -2678,7 +2679,7 @@ background-color: #B91D1F;
     column-gap: clamp(1rem, 2vw, 1.25rem);
     row-gap: 2.5rem;
   }
-  #values-1571 .cs-card-group {
+  #values-1571 .ke-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -2687,7 +2688,7 @@ background-color: #B91D1F;
     /* 24px - 60px */
     gap: clamp(1.5rem, 5vw, 3.75rem);
   }
-  #values-1571 .cs-item {
+  #values-1571 .ke-item {
     list-style: none;
     text-align: center;
     display: flex;
@@ -2696,7 +2697,7 @@ background-color: #B91D1F;
     align-items: center;
     gap: 1.25rem;
   }
-  #values-1571 .cs-icon-wrapper {
+  #values-1571 .ke-icon-wrapper {
     /* 60px - 80px */
     width: clamp(3.75rem, 5vw, 5rem);
     height: clamp(3.75rem, 5vw, 5rem);
@@ -2710,7 +2711,7 @@ background-color: #B91D1F;
     overflow: hidden;
     aspect-ratio: 1;
   }
-  #values-1571 .cs-icon-wrapper::before {
+  #values-1571 .ke-icon-wrapper::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -2720,25 +2721,25 @@ background-color: #B91D1F;
     top: 0;
     left: 0;
   }
-  #values-1571 .cs-icon {
+  #values-1571 .ke-icon {
     /* 24px - 36px */
     width: clamp(1.5rem, 3vw, 2.25rem);
     height: auto;
   }
-  #values-1571 .cs-h3 {
+  #values-1571 .ke-h3 {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
     margin: 0 0 0.5rem;
     color: var(--headerColor);
   }
-  #values-1571 .cs-item-text {
+  #values-1571 .ke-item-text {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #values-1571 .cs-image {
+  #values-1571 .ke-image {
     /* all these change on tablet */
     width: 70vw;
     max-width: 18.75rem;
@@ -2749,14 +2750,14 @@ background-color: #B91D1F;
     justify-content: center;
     position: relative;
   }
-  #values-1571 .cs-image img {
+  #values-1571 .ke-image img {
     width: 100%;
     height: 100%;
     max-height: 18.75rem;
     object-fit: contain;
     z-index: 1;
   }
-  #values-1571 .cs-image::before {
+  #values-1571 .ke-image::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -2767,7 +2768,7 @@ background-color: #B91D1F;
     top: 0;
     left: 0;
   }
-  #values-1571 .cs-image::after {
+  #values-1571 .ke-image::after {
     content: '';
     width: 75%;
     height: 75%;
@@ -2779,7 +2780,7 @@ background-color: #B91D1F;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #values-1571 .cs-background {
+  #values-1571 .ke-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -2788,7 +2789,7 @@ background-color: #B91D1F;
     left: 0;
     z-index: -1;
   }
-  #values-1571 .cs-background img {
+  #values-1571 .ke-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2799,30 +2800,30 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #values-1571 .cs-container {
+  #values-1571 .ke-container {
     max-width: 80rem;
   }
-  #values-1571 .cs-card-wrapper {
+  #values-1571 .ke-card-wrapper {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
-  #values-1571 .cs-item {
+  #values-1571 .ke-item {
     text-align: left;
     align-items: start;
   }
-  #values-1571 .cs-image {
+  #values-1571 .ke-image {
     width: 30vw;
     max-width: 26.75rem;
     height: 30vw;
     max-height: 26.875rem;
   }
-  #values-1571 .cs-image img {
+  #values-1571 .ke-image img {
     max-height: 26.875rem;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #values-1571 .cs-item {
+  #values-1571 .ke-item {
     flex-direction: row;
   }
 }      
@@ -2837,7 +2838,7 @@ background-color: #B91D1F;
       padding: var(--sectionPadding);
       background-color: #30312D;
   }
-  #banner-857 .cs-container {
+  #banner-857 .ke-container {
       width: 100%;
       /* changes to 1280px at desktop */
       max-width: 50rem;
@@ -2848,7 +2849,7 @@ background-color: #B91D1F;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #banner-857 .cs-content {
+  #banner-857 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -2857,14 +2858,14 @@ background-color: #B91D1F;
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
   }
-  #banner-857 .cs-logo-group {
+  #banner-857 .ke-logo-group {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 2.5rem;
   }
-  #banner-857 .cs-logo {
+  #banner-857 .ke-logo {
       width: 40%;
       max-width: 7.5rem;
       height: auto;
@@ -2874,7 +2875,7 @@ background-color: #B91D1F;
 }
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #banner-857 .cs-container {
+  #banner-857 .ke-container {
       max-width: 80rem;
   }
 }                   
@@ -2890,7 +2891,7 @@ background-color: #B91D1F;
       z-index: 1;
       margin: 5rem 0rem;
   }
-  #mission-1307 .cs-container {
+  #mission-1307 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -2902,7 +2903,7 @@ background-color: #B91D1F;
       align-items: center;
       position: relative;
   }
-  #mission-1307 .cs-content {
+  #mission-1307 .ke-content {
       width: 100%;
       max-width: 53.125rem;
       display: flex;
@@ -2912,7 +2913,7 @@ background-color: #B91D1F;
       /* set text align to left if content needs to be left aligned */
       text-align: center;
   }
-  #mission-1307 .cs-quote {
+  #mission-1307 .ke-quote {
       /* 31px - 49px */
       font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
       line-height: 1.2em;
@@ -2922,7 +2923,7 @@ background-color: #B91D1F;
       color: #fff;
       text-align: inherit;
   }
-  #mission-1307 .cs-background {
+  #mission-1307 .ke-background {
       width: 100%;
       height: 100%;
       background-color: #1a1a1a;
@@ -2932,14 +2933,14 @@ background-color: #B91D1F;
       z-index: -1;
       /* darkened overlay */
   }
-  #mission-1307 .cs-background::before {
+  #mission-1307 .ke-background::before {
       content: "";
       width: 100%;
       height: 100%;
       position: absolute;
       z-index: 1;
   }
-  #mission-1307 .cs-background img {
+  #mission-1307 .ke-background img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -2962,7 +2963,7 @@ background-color: #B91D1F;
       position: relative;
       padding: 2rem;
   }
-  #gallery-46 .cs-container {
+  #gallery-46 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -2972,7 +2973,7 @@ background-color: #B91D1F;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #gallery-46 .cs-content {
+  #gallery-46 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -2982,7 +2983,7 @@ background-color: #B91D1F;
       align-items: center;
   }
 
-  #gallery-46 .cs-image-group {
+  #gallery-46 .ke-image-group {
       width: 100%;
       margin: 0;
       display: grid;
@@ -2993,7 +2994,7 @@ background-color: #B91D1F;
       /* 8px - 20px */
       gap: clamp(0.5rem, 1.5vw, 1.25rem);
   }
-  #gallery-46 .cs-item {
+  #gallery-46 .ke-item {
       width: 100%;
       margin: 0;
       aspect-ratio: 1;
@@ -3003,29 +3004,29 @@ background-color: #B91D1F;
       /* prevents image from overflowing the container on hover */
       overflow: hidden;
   }
-  #gallery-46 .cs-item:hover .cs-picture img {
+  #gallery-46 .ke-item:hover .ke-picture img {
       transform: scale(1.1);
   }
-  #gallery-46 .cs-item:hover .cs-hover-box {
+  #gallery-46 .ke-item:hover .ke-hover-box {
       opacity: 1;
       pointer-events: all;
   }
-  #gallery-46 .cs-item:hover .cs-heading3 {
+  #gallery-46 .ke-item:hover .ke-heading3 {
       opacity: 1;
       /* Return to original position */
       transform: translateY(0);
   }
-  #gallery-46 .cs-item:hover .cs-subtitle {
+  #gallery-46 .ke-item:hover .ke-subtitle {
       opacity: 1;
       /* Return to original position */
       transform: translateY(0);
   }
-  #gallery-46 .cs-item:hover .cs-link {
+  #gallery-46 .ke-item:hover .ke-link {
       opacity: 1;
       /* Return to original position */
       transform: translateY(0);
   }
-  #gallery-46 .cs-picture {
+  #gallery-46 .ke-picture {
       position: absolute;
       top: 0;
       left: 0;
@@ -3033,7 +3034,7 @@ background-color: #B91D1F;
       width: 100%;
       object-fit: cover;
   }
-  #gallery-46 .cs-picture img {
+  #gallery-46 .ke-picture img {
       position: absolute;
       top: 0;
       left: 0;
@@ -3042,17 +3043,17 @@ background-color: #B91D1F;
       object-fit: cover;
       transition: transform 0.6s;
   }
-  #gallery-46 .cs-item-1 {
+  #gallery-46 .ke-item-1 {
       grid-column: 1 / span 12;
       grid-row: 1 / 2;
       aspect-ratio: 2.07594937;
   }
-  #gallery-46 .cs-item-5 {
+  #gallery-46 .ke-item-5 {
       grid-column: 7 / span 6;
       grid-row: 3 / span 2;
       aspect-ratio: initial;
   }
-  #gallery-46 .cs-hover-box {
+  #gallery-46 .ke-hover-box {
       height: 100%;
       width: 100%;
       padding: 1rem 0.625rem;
@@ -3066,11 +3067,11 @@ background-color: #B91D1F;
       box-sizing: border-box;
       transition: opacity 0.3s;
       /* prevent it from interacting with the mouse so we can add a hover
-          effect on the cs-item parent */
+          effect on the ke-item parent */
       pointer-events: none;
       position: relative;
   }
-  #gallery-46 .cs-hover-box:before {
+  #gallery-46 .ke-hover-box:before {
       /* top right box */
       content: "";
       width: 100%;
@@ -3082,7 +3083,7 @@ background-color: #B91D1F;
       top: 0;
       left: 0;
   }
-  #gallery-46 .cs-heading3 {
+  #gallery-46 .ke-heading3 {
       /* 16px - 20px */
       font-size: clamp(1rem, 5vw, 1.25rem);
       line-height: 1.2em;
@@ -3096,7 +3097,7 @@ background-color: #B91D1F;
           opacity 0.3s,
           transform 0.5s;
   }
-  #gallery-46 .cs-subtitle {
+  #gallery-46 .ke-subtitle {
       /* 13px - 15px */
       font-size: clamp(0.8125rem, 5vw, 0.9375rem);
       line-height: 1.5em;
@@ -3114,7 +3115,7 @@ background-color: #B91D1F;
           transform 0.5s;
       transition-delay: 0.1s;
   }
-  #gallery-46 .cs-link {
+  #gallery-46 .ke-link {
       font-size: 0.9375rem;
       line-height: 1.5em;
       font-weight: bold;
@@ -3132,10 +3133,10 @@ background-color: #B91D1F;
           transform 0.5s;
       transition-delay: 0.3s;
   }
-  #gallery-46 .cs-link:hover:before {
+  #gallery-46 .ke-link:hover:before {
       width: 100%;
   }
-  #gallery-46 .cs-link:before {
+  #gallery-46 .ke-link:before {
       content: "";
       position: absolute;
       display: block;
@@ -3147,10 +3148,10 @@ background-color: #B91D1F;
       left: 0;
       transition: width 0.3s;
   }
-  #gallery-46 .cs-link svg {
+  #gallery-46 .ke-link svg {
       margin-right: 0.5rem;
   }
-  #gallery-46 .cs-button-solid {
+  #gallery-46 .ke-button-solid {
     font-size: 1rem;
     font-weight: 600;
     /* 46px - 56px */
@@ -3171,7 +3172,7 @@ background-color: #B91D1F;
     position: relative;
     z-index: 1;
   }
-  #gallery-46 .cs-button-solid:before {
+  #gallery-46 .ke-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -3184,34 +3185,34 @@ background-color: #B91D1F;
     z-index: -1;
     transition: width 0.3s all;
   }
-  #gallery-46 .cs-button-solid:hover:before {
+  #gallery-46 .ke-button-solid:hover:before {
     width: 100%;
   }
 }
-  #gallery-46 .cs-button-solid:hover:before {
+  #gallery-46 .ke-button-solid:hover:before {
       width: 100%;
   }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #gallery-46 .cs-item {
+  #gallery-46 .ke-item {
       grid-column: span 3;
   }
-  #gallery-46 .cs-item-1 {
+  #gallery-46 .ke-item-1 {
       grid-column: 1 / span 6;
   }
-  #gallery-46 .cs-item-2 {
+  #gallery-46 .ke-item-2 {
       grid-column: 1 / span 3;
       grid-row: 2;
   }
-  #gallery-46 .cs-item-3 {
+  #gallery-46 .ke-item-3 {
       grid-column: 4 / span 3;
       grid-row: 2;
   }
-  #gallery-46 .cs-item-5 {
+  #gallery-46 .ke-item-5 {
       grid-column: 7 / span 3;
       grid-row: 2;
   }
-  #gallery-46 .cs-item-6 {
+  #gallery-46 .ke-item-6 {
       grid-column: 10 / span 3;
       grid-row: 1 / span 2;
       aspect-ratio: initial;
@@ -3227,7 +3228,7 @@ background-color: #B91D1F;
   #projects-605 {
       padding: var(--sectionPadding);
   }
-  #projects-605 .cs-container {
+  #projects-605 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -3237,7 +3238,7 @@ background-color: #B91D1F;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #projects-605 .cs-content {
+  #projects-605 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
@@ -3247,10 +3248,10 @@ background-color: #B91D1F;
       align-items: flex-start;
   }
 
-  #projects-605 .cs-title {
+  #projects-605 .ke-title {
       max-width: 20ch;
   }
-  #projects-605 .cs-card-group {
+  #projects-605 .ke-card-group {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -3261,13 +3262,13 @@ background-color: #B91D1F;
       gap: clamp(1rem, 1.8vw, 1.25rem);
       row-gap: 2.5rem;
   }
-  #projects-605 .cs-item {
+  #projects-605 .ke-item {
       list-style: none;
       width: 100%;
       margin: 0;
       padding: 0;
   }
-  #projects-605 .cs-info {
+  #projects-605 .ke-info {
       width: 100%;
       /* 350px - 450px */
       min-height: clamp(21.875rem, 38vw, 28.125rem);
@@ -3285,16 +3286,16 @@ background-color: #B91D1F;
       box-sizing: border-box;
       position: relative;
   }
-  #projects-605 .cs-link {
+  #projects-605 .ke-link {
       text-decoration: none;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
   }
-  #projects-605 .cs-link:hover .cs-header,
-  #projects-605 .cs-link:focus .cs-header,
-  #projects-605 .cs-link:hover .cs-item-text,
-  #projects-605 .cs-link:focus .cs-item-text {
+  #projects-605 .ke-link:hover .ke-header,
+  #projects-605 .ke-link:focus .ke-header,
+  #projects-605 .ke-link:hover .ke-item-text,
+  #projects-605 .ke-link:focus .ke-item-text {
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
@@ -3304,22 +3305,22 @@ background-color: #B91D1F;
           visibility 0.3s,
           opacity 0.6s;
   }
-  #projects-605 .cs-link:hover .cs-number,
-  #projects-605 .cs-link:focus .cs-number {
+  #projects-605 .ke-link:hover .ke-number,
+  #projects-605 .ke-link:focus .ke-number {
       padding-bottom: 0.9375rem;
   }
-  #projects-605 .cs-link:hover .cs-number:before,
-  #projects-605 .cs-link:focus .cs-number:before {
+  #projects-605 .ke-link:hover .ke-number:before,
+  #projects-605 .ke-link:focus .ke-number:before {
       /* changes to 500px at tablet */
       width: 50rem;
       height: 31.25rem;
       opacity: 0.9;
   }
-  #projects-605 .cs-link:hover .cs-background img,
-  #projects-605 .cs-link:focus .cs-background img {
+  #projects-605 .ke-link:hover .ke-background img,
+  #projects-605 .ke-link:focus .ke-background img {
       transform: scale(1.1);
   }
-  #projects-605 .cs-header {
+  #projects-605 .ke-header {
       /* 28px - 40px */
       font-size: clamp(1.75rem, 3.2vw, 2.5rem);
       line-height: 1.2em;
@@ -3338,7 +3339,7 @@ background-color: #B91D1F;
           height 0.4s;
       transition-delay: 0.1s;
   }
-  #projects-605 .cs-item-text {
+  #projects-605 .ke-item-text {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
@@ -3358,7 +3359,7 @@ background-color: #B91D1F;
           height 0.4s;
       transition-delay: 0.2s;
   }
-  #projects-605 .cs-number {
+  #projects-605 .ke-number {
       /* 24px - 32px */
       font-size: clamp(1.5rem, 2vw, 2rem);
       /* 60px - 80px */
@@ -3377,7 +3378,7 @@ background-color: #B91D1F;
       left: 0;
       transition: padding-bottom 0.3s;
   }
-  #projects-605 .cs-number:before {
+  #projects-605 .ke-number:before {
       content: "";
       width: 100%;
       height: 100%;
@@ -3393,7 +3394,7 @@ background-color: #B91D1F;
           opacity 0.3s;
       z-index: -1;
   }
-  #projects-605 .cs-h3 {
+  #projects-605 .ke-h3 {
       /* 20px - 24px */
       font-size: clamp(1.25rem, 2.5vw, 1.5rem);
       line-height: 1.2em;
@@ -3403,7 +3404,7 @@ background-color: #B91D1F;
       color: #EFEFEF;
       display: block;
   }
-  #projects-605 .cs-background {
+  #projects-605 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -3414,7 +3415,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: -1;
   }
-  #projects-605 .cs-background img {
+  #projects-605 .ke-background img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -3426,34 +3427,34 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #projects-605 .cs-content {
+  #projects-605 .ke-content {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
   }
-  #projects-605 .cs-flex-group {
+  #projects-605 .ke-flex-group {
       width: 45%;
   }
-  #projects-605 .cs-text {
+  #projects-605 .ke-text {
       width: 48vw;
   }
-  #projects-605 .cs-card-group {
+  #projects-605 .ke-card-group {
       flex-direction: row;
       align-items: stretch;
       flex-wrap: wrap;
       justify-content: center;
   }
-  #projects-605 .cs-item {
+  #projects-605 .ke-item {
       width: clamp(48.87%, 46vw, 49.04%);
   }
-  #projects-605 .cs-link:hover .cs-number:before,
-  #projects-605 .cs-link:focus .cs-number:before {
+  #projects-605 .ke-link:hover .ke-number:before,
+  #projects-605 .ke-link:focus .ke-number:before {
       width: 31.25rem;
   }
 }
 /* Desktop - 1300px */
 @media only screen and (min-width: 75rem) {
-  #projects-605 .cs-item {
+  #projects-605 .ke-item {
       /* we do this so it's stackable. You can add any number of reviews you want and they will stack and center in the middle. We dont use grid because if you have an odd number of cards, they don't stay centered, they align with their grid lines. This way its more FLEX-ible*/
       width: clamp(23.7%, 23vw, 23.81%);
   }
@@ -3470,13 +3471,13 @@ background-color: #B91D1F;
     z-index: 1;
     padding: 2rem 0rem;
   }
-  #blog-1702 .cs-container {
+  #blog-1702 .ke-container {
     max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
   }
-  #blog-1702 .cs-news {
+  #blog-1702 .ke-news {
     /* changes to 740px on tablet */
     max-width: 31.25rem;
     margin: auto;
@@ -3486,7 +3487,7 @@ background-color: #B91D1F;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #blog-1702 .cs-content {
+  #blog-1702 .ke-content {
     /* set text align to center if content needs to be centrally aligned */
     text-align: left;
     width: 100%;
@@ -3495,17 +3496,17 @@ background-color: #B91D1F;
     /* aligns content to the left, set to center to centrally align */
     align-items: flex-start;
   }
-  #blog-1702 .cs-title {
+  #blog-1702 .ke-title {
     margin: 0;
   }
-  #blog-1702 .cs-card-group {
+  #blog-1702 .ke-card-group {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
   }
-  #blog-1702 .cs-item {
+  #blog-1702 .ke-item {
     display: flex;
     flex-direction: column;
     /* 20px - 32px */
@@ -3514,20 +3515,20 @@ background-color: #B91D1F;
     border-radius: 0.50rem;
     padding: 2rem;
   }
-  #blog-1702 .cs-picture {
+  #blog-1702 .ke-picture {
     width: auto;
     height: 11.4375rem;
     display: block;
   }
-  #blog-1702 .cs-picture img {
+  #blog-1702 .ke-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  #blog-1702 .cs-item-text {
+  #blog-1702 .ke-item-text {
     flex: 1 0 0;
   }
-  #blog-1702 .cs-h3 {
+  #blog-1702 .ke-h3 {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -3535,7 +3536,7 @@ background-color: #B91D1F;
     margin-bottom: 1rem;
     color: var(--headerColor);
   }
-  #blog-1702 .cs-desc {
+  #blog-1702 .ke-desc {
     font-size: 1rem;
     line-height: 1.5em;
 
@@ -3543,7 +3544,7 @@ background-color: #B91D1F;
     color: var(--bodyTextColor);
 
   }
-  #blog-1702 .cs-link {
+  #blog-1702 .ke-link {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -3557,26 +3558,26 @@ background-color: #B91D1F;
     gap: 0.625rem;
     transition: color 0.3s;
   }
-  #blog-1702 .cs-link:hover .cs-arrow {
+  #blog-1702 .ke-link:hover .ke-arrow {
     transform: translateX(0.25rem);
   }
-  #blog-1702 .cs-link-text {
+  #blog-1702 .ke-link-text {
     width: fit-content;
     display: block;
     color: #B91D1F;
   }
-  #blog-1702 .cs-arrow {
+  #blog-1702 .ke-arrow {
     width: 1.25rem;
     height: auto;
     display: block;
     transition: filter 0.3s, transform 0.3s;
   }
-  #blog-1702 .cs-background {
+  #blog-1702 .ke-background {
     width: 100%;
     height: 22.5rem;
     display: block;
   }
-  #blog-1702 .cs-background img {
+  #blog-1702 .ke-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -3588,31 +3589,31 @@ background-color: #B91D1F;
     padding: 0rem 2rem;
     margin-top: 10rem;
   }
-  #blog-1702 .cs-container {
+  #blog-1702 .ke-container {
     padding: 0;
     justify-content: flex-start;
   }
-  #blog-1702 .cs-title {
+  #blog-1702 .ke-title {
     margin: 0;
   }
-  #blog-1702 .cs-news {
+  #blog-1702 .ke-news {
     width: 60vw;
     max-width: 46.25rem;
     margin: 0;
     padding: 0;
   }
-  #blog-1702 .cs-card-group {
+  #blog-1702 .ke-card-group {
     /* 16px - 32px */
     gap: clamp(1rem, 3vw, 2rem);
   }
-  #blog-1702 .cs-item {
+  #blog-1702 .ke-item {
     flex-direction: row;
   }
-  #blog-1702 .cs-picture {
+  #blog-1702 .ke-picture {
     width: 11.25rem;
     height: 11.25rem;
   }
-  #blog-1702 .cs-background {
+  #blog-1702 .ke-background {
     width: 30%;
     height: auto;
     position: absolute;
@@ -3623,7 +3624,7 @@ background-color: #B91D1F;
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #blog-1702 .cs-background {
+  #blog-1702 .ke-background {
     width: 50vw;
     left: 50%;
     right: auto;
@@ -3647,7 +3648,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #banner-849 .cs-container {
+  #banner-849 .ke-container {
       text-align: center;
       width: 100%;
       max-width: 80rem;
@@ -3658,17 +3659,17 @@ background-color: #B91D1F;
       flex-direction: column;
       gap: 1rem;
   }
-  #banner-849 .cs-int-title {
+  #banner-849 .ke-int-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
       font-weight: 900;
       line-height: 1.2em;
       text-align: inherit;
       margin: 0;
-      color: var(--bodyTextColorWhite);
+      color: #B91D1F;
       position: relative;
   }
-  #banner-849 .cs-background {
+  #banner-849 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -3677,7 +3678,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: -1;
   }
-  #banner-849 .cs-background:before {
+  #banner-849 .ke-background:before {
       /* background color overlay */
       content: "";
       position: absolute;
@@ -3690,7 +3691,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: 1;
   }
-  #banner-849 .cs-background img {
+  #banner-849 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -3699,7 +3700,7 @@ background-color: #B91D1F;
       /* Makes img tag act as a background image */
       object-fit: cover;
   }
-  #banner-849 .cs-wave {
+  #banner-849 .ke-wave {
       /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
       width: 48rem;
       height: auto;
@@ -3713,7 +3714,7 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-  #banner-849 .cs-background:before {
+  #banner-849 .ke-background:before {
       opacity: 1;
       background: linear-gradient(
           90.01deg,
@@ -3721,7 +3722,7 @@ background-color: #B91D1F;
           rgba(0, 0, 0, 0) 100%
       );
   }
-  #banner-849 .cs-wave {
+  #banner-849 .ke-wave {
       width: 100%;
       left: 0;
       transform: none;
@@ -3735,14 +3736,13 @@ background-color: #B91D1F;
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #content-page-849 {
-      padding: var(--sectionPadding);
-      background-color: #fff;
+      padding: 2rem;
       /* clips the wave background from causing overflow issues when it goes off screen */
       overflow: hidden;
       position: relative;
       z-index: 1;
   }
-  #content-page-849 .cs-container {
+  #content-page-849 .ke-container {
       width: 100%;
       max-width: 80rem;
       margin: auto;
@@ -3753,7 +3753,7 @@ background-color: #B91D1F;
       gap: clamp(3rem, 6vw, 4rem);
       position: relative;
   }
-  #content-page-849 .cs-content {
+  #content-page-849 .ke-content {
       /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
@@ -3763,7 +3763,7 @@ background-color: #B91D1F;
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
   }
-  #content-page-849 .cs-title {
+  #content-page-849 .ke-title {
       font-size: var(--headerFontSize);
       font-weight: 900;
       line-height: 1.2em;
@@ -3771,7 +3771,6 @@ background-color: #B91D1F;
       width: 100%;
       max-width: 100%;
       margin: 0 0 1rem 0;
-      color: var(--headerColor);
       position: relative;
   }
   #content-page-849 h2,
@@ -3782,28 +3781,29 @@ background-color: #B91D1F;
       font-weight: 700;
       text-align: inherit;
       margin: 0 0 1rem 0;
-      color: var(--headerColor);
+      color: #E89C4D;
   }
   #content-page-849 h2 {
       font-size: 2rem;
       margin-top: 2rem;
+      color: #E89C4D;
   }
   #content-page-849 h3 {
       font-size: 1.5rem;
-      color: var(--primary);
+      color: #E89C4D;
   }
   #content-page-849 h4,
   #content-page-849 h5,
   #content-page-849 h6 {
       font-size: 1.25rem;
   }
-  #content-page-849 .cs-button-solid {
+  #content-page-849 .ke-button-solid {
       margin-bottom: 2rem;
   }
-  #content-page-849 .cs-no-margin {
+  #content-page-849 .ke-no-margin {
       margin: 0;
   }
-  #content-page-849 .cs-color {
+  #content-page-849 .ke-color {
       color: var(--primary);
   }
   #content-page-849 p {
@@ -3855,7 +3855,7 @@ background-color: #B91D1F;
       height: auto;
       display: block;
   }
-  #content-page-849 .cs-image-group {
+  #content-page-849 .ke-image-group {
       width: 50%;
       max-width: 33.875rem;
       display: none;
@@ -3863,7 +3863,7 @@ background-color: #B91D1F;
       flex-direction: column;
       gap: 1.25rem;
   }
-  #content-page-849 .cs-picture {
+  #content-page-849 .ke-picture {
       width: 100%;
       /* 300px - 520px */
       height: clamp(18.75rem, 40vw, 32.5rem);
@@ -3878,7 +3878,7 @@ background-color: #B91D1F;
       display: block;
       position: relative;
   }
-  #content-page-849 .cs-picture img {
+  #content-page-849 .ke-picture img {
       width: 100%;
       height: 100%;
       /* makes it act like a background image */
@@ -3887,16 +3887,16 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #content-page-849 .cs-container {
+  #content-page-849 .ke-container {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
   }
-  #content-page-849 .cs-content {
+  #content-page-849 .ke-content {
       flex: none;
       width: 60%;
   }
-  #content-page-849 .cs-image-group {
+  #content-page-849 .ke-image-group {
       display: flex;
   }
 }
@@ -3918,7 +3918,7 @@ background-color: #B91D1F;
       position: relative;
       z-index: 1;
   }
-  #banner-850 .cs-container {
+  #banner-850 .ke-container {
       text-align: center;
       width: 100%;
       max-width: 80rem;
@@ -3929,7 +3929,7 @@ background-color: #B91D1F;
       flex-direction: column;
       gap: 1rem;
   }
-  #banner-850 .cs-int-title {
+  #banner-850 .ke-int-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
       font-weight: 900;
@@ -3939,7 +3939,7 @@ background-color: #B91D1F;
       color: var(--bodyTextColorWhite);
       position: relative;
   }
-  #banner-850 .cs-background {
+  #banner-850 .ke-background {
       width: 100%;
       height: 100%;
       display: block;
@@ -3948,7 +3948,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: -1;
   }
-  #banner-850 .cs-background:before {
+  #banner-850 .ke-background:before {
       /* background color overlay */
       content: "";
       position: absolute;
@@ -3961,7 +3961,7 @@ background-color: #B91D1F;
       left: 0;
       z-index: 1;
   }
-  #banner-850 .cs-background img {
+  #banner-850 .ke-background img {
       position: absolute;
       top: 0;
       left: 0;
@@ -3970,7 +3970,7 @@ background-color: #B91D1F;
       /* Makes img tag act as a background image */
       object-fit: cover;
   }
-  #banner-850 .cs-wave {
+  #banner-850 .ke-wave {
       /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
       width: 48rem;
       height: auto;
@@ -3984,7 +3984,7 @@ background-color: #B91D1F;
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #banner-850 .cs-background:before {
+  #banner-850 .ke-background:before {
       opacity: 1;
       background: linear-gradient(
           90.01deg,
@@ -3992,7 +3992,7 @@ background-color: #B91D1F;
           rgba(0, 0, 0, 0) 100%
       );
   }
-  #banner-850 .cs-wave {
+  #banner-850 .ke-wave {
       width: 100%;
       left: 0;
       transform: none;
@@ -4000,178 +4000,181 @@ background-color: #B91D1F;
 }
 
 /*-- -------------------------- -->
-<---        Content Page        -->
+<---          Gallery           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #content-page-850 {
-      padding: var(--sectionPadding);
-
-      /* clips the wave background from causing overflow issues when it goes off screen */
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
+  #gallery-1234 {
+      padding: 2rem;
   }
-  #content-page-850 .cs-container {
+  #gallery-1234 .ke-container {
       width: 100%;
-      max-width: 80rem;
+      /* changes to 100% at tablet */
+      max-width: 44rem;
       margin: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
-      position: relative;
   }
-  #content-page-850 .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: left;
+  #gallery-1234 .ke-content {
+      text-align: center;
       width: 100%;
-      max-width: 39.375rem;
       display: flex;
       flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
-      align-items: flex-start;
+      align-items: center;
   }
-  #content-page-850 .cs-title {
-      font-size: var(--headerFontSize);
-      font-weight: 900;
-      line-height: 1.2em;
-      text-align: inherit;
+
+  #gallery-1234 .ke-title {
+      color: var(--bodyTextColorWhite);
+  }
+  #gallery-1234 .ke-text {
+      color: var(--bodyTextColorWhite);
+      opacity: 0.8;
+  }
+  #gallery-1234 .ke-gallery {
       width: 100%;
-      max-width: 100%;
-      margin: 0 0 1rem 0;
-      color: var(--headerColor);
+      /* changes to flexbox at tablet */
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      /* 16px 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #gallery-1234 .ke-flex {
+      display: contents;
+  }
+  #gallery-1234 .ke-picture {
+      width: 100%;
+      height: 69vw;
+      /* changes at tablet */
+      max-height: 18.75rem;
+      display: block;
       position: relative;
   }
-  #content-page-850 h2,
-  #content-page-850 h3,
-  #content-page-850 h4,
-  #content-page-850 h5,
-  #content-page-850 h6 {
-      font-weight: 700;
-      text-align: inherit;
-      margin: 0 0 1rem 0;
-      color: var(--headerColor);
-  }
-  #content-page-850 h2 {
-      font-size: 2rem;
-      margin-top: 2rem;
-  }
-  #content-page-850 h3 {
-      font-size: 1.5rem;
-      color: var(--primary);
-  }
-  #content-page-850 h4,
-  #content-page-850 h5,
-  #content-page-850 h6 {
-      font-size: 1.25rem;
-  }
-  #content-page-850 .cs-button-solid {
-      margin-bottom: 2rem;
-  }
-  #content-page-850 .cs-no-margin {
-      margin: 0;
-  }
-  #content-page-850 .cs-color {
-      color: var(--primary);
-  }
-  #content-page-850 p {
-      font-size: var(--bodyFontSize);
-      line-height: 1.5em;
-      text-align: inherit;
-      width: 100%;
-      margin: 0 0 1rem 0;
-      color: var(--bodyTextColor);
-  }
-  #content-page-850 p:last-of-type {
-      margin-bottom: 2rem;
-  }
-  #content-page-850 p a {
-      font-size: inherit;
-      line-height: inherit;
-      text-decoration: underline;
-      color: var(--primary);
-  }
-  #content-page-850 ol,
-  #content-page-850 ul {
-      padding-left: 1.5rem;
-      margin: 0 0 2rem 0;
-      color: var(--bodyTextColor);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-  }
-  #content-page-850 ul li {
-      list-style: none;
-      color: inherit;
-      position: relative;
-  }
-  #content-page-850 ul li:before {
-      /* custom list bullet */
-      content: "";
-      width: 3px;
-      height: 3px;
-      background: currentColor;
-      opacity: 1;
-      border-radius: 50%;
+  #gallery-1234 .ke-picture img {
       position: absolute;
-      display: block;
-      top: 0.625rem;
-      left: -0.75rem;
-  }
-  #content-page-850 img {
-      width: 100%;
-      height: auto;
-      display: block;
-  }
-  #content-page-850 .cs-image-group {
-      width: 50%;
-      max-width: 33.875rem;
-      display: none;
-      position: relative;
-      flex-direction: column;
-      gap: 1.25rem;
-  }
-  #content-page-850 .cs-picture {
-      width: 100%;
-      /* 300px - 520px */
-      height: clamp(18.75rem, 40vw, 32.5rem);
-      box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
-      /* 125px - 200px */
-      border-radius: clamp(7.8125rem, 15vw, 12.5rem) 0
-          clamp(7.8125rem, 15vw, 12.5rem) 0;
-      /* prevents border from affecting height and width */
-      box-sizing: border-box;
-      /* clips img tag corners */
-      overflow: hidden;
-      display: block;
-      position: relative;
-  }
-  #content-page-850 .cs-picture img {
-      width: 100%;
+      top: 0;
+      left: 0;
       height: 100%;
-      /* makes it act like a background image */
+      width: 100%;
+      /* Makes img tag act as a background image */
       object-fit: cover;
+  }
+  #gallery-1234 .ke-button-solid {
+    font-size: 1rem;
+    font-weight: 600;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 2.5em);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    min-width: 8.50rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #EFEFEF;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
+    border-radius: 0.50rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-1234 .ke-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #30312D;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s all;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #content-page-850 .cs-container {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
+  #gallery-1234 .ke-container {
+      max-width: 100%;
   }
-  #content-page-850 .cs-content {
-      flex: none;
-      width: 60%;
-      /* sends it to the right in the 2nd position */
-      order: 2;
-  }
-  #content-page-850 .cs-image-group {
+  #gallery-1234 .ke-gallery {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
-}
-
-                              
+  #gallery-1234 .ke-flex,
+  #gallery-1234 .ke-row {
+      width: 20%;
+  }
+  #gallery-1234 .ke-flex {
+      /* 375px - 680px */
+      height: clamp(23.4375rem, 50vw, 42.5rem);
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #gallery-1234 .ke-picture {
+      max-height: 100%;
+  }
+  #gallery-1234 .ke-picture1 {
+      height: 62%;
+      /* prevents flexbox from squishing it */
+      flex: none;
+  }
+  #gallery-1234 .ke-picture2 {
+      height: 100%;
+  }
+  #gallery-1234 .ke-row {
+      height: 40vw;
+      max-height: 32.5rem;
+  }
+  #gallery-1234 .ke-button-solid {
+    font-size: 1rem;
+    font-weight: 600;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 2.5em);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    min-width: 8.50rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #EFEFEF;
+    background-color: #B91D1F;
+    border: 2px solid #B91D1F;
+    border-radius: 0.50rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-1234 .ke-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #30312D;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s all;
+  }
+  #gallery-1234 .ke-button-solid:hover:before {
+    width: 100%;
+  }
+  #gallery-1234 .blog-title {
+    color: #B91D1F;
+    line-height: 1.2em;
+  }
+}                  
